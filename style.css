@@ -1,0 +1,127 @@
+/* Style sheet */
+
+/* Special fonts */
+@font-face {
+    font-family: 'fontawesomeregular';
+    src: url('fonts/fontawesome-webfont-webfont.otf') format('otf'),
+         url('fonts/fontawesome-webfont-webfont.eot') format('eot'),
+         url('fonts/fontawesome-webfont-webfont.svg') format('svg'),
+         url('fonts/fontawesome-webfont-webfont.ttf') format('ttf'),
+         url('fonts/fontawesome-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'glyphicons-halflings-regular';
+    src: url('fonts/glyphicons-halflings-regular.eot') format('eot'),
+         url('fonts/glyphicons-halflings-regular.svg') format('svg'),
+         url('fonts/glyphicons-halflings-regular.ttf') format('ttf'),
+         url('fonts/glyphicons-halflings-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Main structure and fonts */
+
+body {
+	background-color: grey;
+	margin: auto;
+}
+
+#main_wrapper {
+	background-color: lightgreen;
+}
+
+nav li,
+nav h2 {
+	font-family: 'glyphicons-halflings-regular','Trebuchet MS', Arial;
+}
+
+/* Header */
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	background-color: blue;
+
+	height: 120px;
+}
+
+.logo {
+	width: 261px;
+	height: 57px;
+}
+
+nav {
+
+	font-weight: normal;
+
+	height: 50px;
+
+	display: flex;
+	flex-direction: row;
+}
+
+nav ul {
+	background-color: white;
+
+	width: 400px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+
+nav li {
+	border: 1px black solid;
+	background-color: yellow;
+	border-radius: 10px;
+	padding-bottom: 0px;
+
+	width: 23%;
+	height: 50%;
+}
+
+nav a {
+	font-size: 1rem;
+	text-decoration: none;
+}
+
+/* Rest of the body (work in progress) */
+
+form {
+	background-color: purple;
+}
+
+#services img {
+	display: none;
+}
+
+.projects_examples img {
+	display: none;
+}
+
+/* Properties for tablets */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	body {
+		background-color: ;
+	}
+}
+
+/* Properties for desktops */
+
+@media (min-width: 1024px) {
+	body {
+		background-color: ;
+	}
+}
