@@ -22,20 +22,21 @@
     font-style: normal;
 }
 
+nav li,
+nav h2 {
+	font-family: 'glyphicons-halflings-regular','Trebuchet MS', Arial;
+}
+
 /* Main structure and fonts */
 
 body {
-	background-color: grey;
+	width: 400px;
 	margin: auto;
 }
 
 #main_wrapper {
-	background-color: lightgreen;
-}
-
-nav li,
-nav h2 {
-	font-family: 'glyphicons-halflings-regular','Trebuchet MS', Arial;
+	margin: auto;
+	padding-top: 10px;
 }
 
 /* Header */
@@ -43,32 +44,29 @@ nav h2 {
 header {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	align-items: center;
-
-	background-color: blue;
-
-	height: 120px;
 }
 
 .logo {
-	width: 261px;
-	height: 57px;
+	width: 80%;
+}
+
+.logo img {
+	width: 100%;
 }
 
 nav {
+	width: 90%;
 
+	margin-top: 10px;
 	font-weight: normal;
-
-	height: 50px;
 
 	display: flex;
 	flex-direction: row;
+
 }
 
 nav ul {
-	background-color: white;
-
 	width: 400px;
 
 	display: flex;
@@ -80,26 +78,33 @@ nav ul {
 	list-style-type: none;
 }
 
-
 nav li {
-	border: 1px black solid;
-	background-color: yellow;
-	border-radius: 10px;
-	padding-bottom: 0px;
-
 	width: 23%;
-	height: 50%;
+
+	border: none;
+	border-radius: 12px 0 12px 0;
+	box-shadow: 2px 2px 6px #4DA0BC;
+
+	padding-bottom: 0px;
+	padding: 6px 0 6px 0;
 }
 
 nav a {
-	font-size: 1rem;
+	width: 80%;
+
+	display: flex;
+	justify-content: center;
+
+	color:#4DA0BC;
+	font: bold 12px Verdana;
+	font-size: 0.8rem;
 	text-decoration: none;
 }
 
 /* Rest of the body (work in progress) */
 
-form {
-	background-color: purple;
+#banner {
+	background-image: url('images/slider/bg1.jpg');
 }
 
 #services img {
