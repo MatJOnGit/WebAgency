@@ -1,6 +1,9 @@
 /* Style sheet */
 
-/* Special fonts */
+/* Fonts and fonts colors */
+
+/* Fonts */ 
+
 @font-face {
     font-family: 'fontawesomeregular';
     src: url('fonts/fontawesome-webfont-webfont.otf') format('otf'),
@@ -27,11 +30,38 @@ nav h2 {
 	font-family: 'glyphicons-halflings-regular','Trebuchet MS', Arial;
 }
 
-/* Main structure and fonts */
+/* Fonts colors. REMINDER : add white font color to "Projects_types li" and to "Projects_example img" 's layer (on hover) */
+
+nav a,
+.AgencyName {
+	color: #4DA0BC;
+}
+
+h1,
+#banner p,
+#banner a,
+.form-button {
+	color: white;
+}
+
+/* Special text modifications */
+
+h1,
+h2 {
+	text-transform: uppercase ;
+}
+
+form a {
+	text-decoration: none;
+	color: black;
+}
+
+/* Main structure */
 
 body {
 	width: 400px;
 	margin: auto;
+	display: flex; /* Only property removing the blank space on the right side, may change in a close future */
 }
 
 #main_wrapper {
@@ -39,7 +69,7 @@ body {
 	padding-top: 10px;
 }
 
-/* Header */
+/* Header. REMINDER : add hover effects and links to other sections on buttons */
 
 header {
 	display: flex;
@@ -67,7 +97,7 @@ nav {
 }
 
 nav ul {
-	width: 400px;
+	width: 100%;
 
 	display: flex;
 	flex-direction: row;
@@ -95,31 +125,69 @@ nav a {
 	display: flex;
 	justify-content: center;
 
-	color:#4DA0BC;
 	font: bold 12px Verdana;
 	font-size: 0.8rem;
 	text-decoration: none;
 }
 
-/* Rest of the body (work in progress) */
+/* Banner (work in progress) */
 
 #banner {
 	background-image: url('images/slider/bg1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	margin-top: 15px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+#banner h1 {
+	width : 80%;
+	height: 30%;
+	font-size: 0.8rem;
+}
+
+#banner p {
+	width: 80%;
+	font-size: 0.8rem;
+}
+
+#banner a {
+	width: 80%;
+	font-size: 0.8rem;
+}
+
+/* Services (work in progress) */
+
+#services {
 }
 
 #services img {
 	display: none;
 }
 
+/* Projects (work in progress) */
+
+#projects {
+	background-color: #F5F5F5;
+}
+
 .projects_examples img {
 	display: none;
 }
 
+/* Contacts (work in progress) */
+
+#contact {
+	margin-bottom: 20px;
+}
+
 /* Properties for tablets */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
 	body {
-		background-color: ;
 	}
 }
 
@@ -127,6 +195,5 @@ nav a {
 
 @media (min-width: 1024px) {
 	body {
-		background-color: ;
 	}
 }
