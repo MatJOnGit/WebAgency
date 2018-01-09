@@ -2,7 +2,7 @@
 
 /* Fonts and fonts colors */
 
-/* Fonts */ 
+/* Fonts */
 
 @font-face {
     font-family: 'fontawesomeregular';
@@ -25,12 +25,13 @@
     font-style: normal;
 }
 
-nav li,
-nav h2 {
-	font-family: 'glyphicons-halflings-regular','Trebuchet MS', Arial;
+
+* {
+	font-family: 'Arial';
 }
 
-/* Fonts colors. REMINDER : add white font color to "Projects_types li" and to "Projects_example img" 's layer (on hover) */
+
+/* Fonts colors, sizes and weights. REMINDER : add white font color to "Projects_types li" and to "Projects_example img" 's layer (on hover) */
 
 nav a,
 .AgencyName,
@@ -47,17 +48,20 @@ h1,
 	color: white;
 }
 
+.services_details span {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
 /* Special text modifications */
 
 h1,
 h2 {
-	text-transform: uppercase ;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
-form a {
-	text-decoration: none;
-	color: black;
-}
+
 
 /* Main structure */
 
@@ -69,16 +73,17 @@ body {
 
 #main_wrapper {
 	margin: auto;
-	padding-top: 10px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* Header. REMINDER : add hover effects and links to other sections on buttons */
+/* Header. REMINDER : add links to other sections on buttons */
 
 header {
 	display: flex;
@@ -88,6 +93,7 @@ header {
 
 .logo {
 	width: 80%;
+	margin: 10px;
 }
 
 .logo img {
@@ -97,15 +103,9 @@ header {
 nav {
 	width: 95%;
 
-	margin-top: 10px;
-	font-weight: normal;
-
 	display: flex;
 	flex-direction: row;
-
 }
-
-/* Make the whole button clickable (not the case atm) */
 
 nav ul {
 	width: 100%;
@@ -121,20 +121,27 @@ nav ul {
 nav li {
 	width: 23%;
 
-	border: none;
 	border-radius: 12px 0 12px 0;
-	box-shadow: 2px 2px 6px #4DA0BC;
 }
 
 nav a {
-	width: 80%;
-
-	font: bold 12px Verdana;
 	font-size: 0.8rem;
 	text-decoration: none;
+	border-radius: 12px 0 12px 0;
 
 	display: block;
-	padding: 6px 10px;
+	padding: 6px 20px;
+	box-shadow: 2px 2px 6px #4DA0BC;
+}
+
+nav a:hover {
+	color: white;
+	background-color: #4DA0BC;
+}
+
+nav a:active {
+	color: black;
+	box-shadow: none;
 }
 
 /* Banner (work in progress) */
@@ -166,7 +173,32 @@ nav a {
 	font-size: 0.8rem;
 }
 
-/* Services (work in progress) */
+/* Services and Projets sections layout */
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 15px;
+}
+
+/* Services */
+
+h2 {
+	margin: 0;
+	font-size: 1.8rem;
+}
+
+.splitter {
+	display: none;
+	margin: 0;
+}
+
+.subtitle {
+	width: 90%;
+	margin-top: 10px;
+	font-size: 0.9rem;
+}
 
 #services img {
 	display: none;
@@ -176,66 +208,64 @@ nav a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 90%;
+	margin: 20px 0;
+}
+
+h3,
+.services_details p {
+	margin: 0;
+}
+
+h3 {
+	font-weight: bold;
 }
 
 .UX-design-icon {
-	width: 50px;
-	height: 50px;
+	width: 65px;
+	height: 65px;
 
 	border-radius: 50%;
-	border: solid black 1px;
+	border: solid #858585 1px;
 
 	align-self: center;
-	margin: 10px 0 0 0;
 }
 
 .UX-design-speech {
-	width: 70%;
-	margin: 10px 0 0 0;
-}
-
-.UX-design-speech p {
-	margin: 10px 0 0 0;
+	width: 100%;
+	margin: 5px 0 0 0;
 }
 
 .UI-design-icon {
-	width: 50px;
-	height: 50px;
+	width: 65px;
+	height: 65px;
 
 	border-radius: 50%;
-	border: solid black 1px;
+	border: solid #858585 1px;
 
 	align-self: center;
-	margin: 10px 0 0 0;
+	margin-top: 20px;
 }
 
 .UI-design-speech {
-	width: 70%;
-	margin: 10px 0 0 0;
-}
-
-.UI-design-speech p {
-	margin: 10px 0 0 0;
+	width: 100%;
+	margin: 5px 0 0 0;
 }
 
 .SEO-icon {
-	width: 50px;
-	height: 50px;
+	width: 65px;
+	height: 65px;
 
 	border-radius: 50%;
-	border: solid black 1px;
+	border: solid #858585 1px;
 
 	align-self: center;
-	margin: 10px 0 0 0;
+	margin-top: 20px;
 }
 
 .SEO-speech {
-	width: 70%;
-	margin: 10px 0;
-}
-
-.SEO-speech p {
-	margin: 0px;
+	width: 100%;
+	margin-top: 5px;
 }
 
 .fas {
@@ -245,12 +275,12 @@ nav a {
 }
 
 .white_dot {
-	width: 20px;
-    height: 20px;
+	width: 18px;
+    height: 18px;
 
     position: relative;
-	top: -3px;
-	left: 37px;
+	bottom: 9px;
+	left: 54px;
 
     border-radius: 50%;
     background-color: white;
@@ -261,8 +291,8 @@ nav a {
     height: 14px;
 
     position: relative;
-	top: -20px;
-	left: 40px;
+	bottom: 25px;
+	left: 56px;
 
     border-radius: 50%;
     background-color: #4DA0BC;
@@ -272,13 +302,91 @@ nav a {
 
 #projects {
 	background-color: #F5F5F5;
+
+	width
+
+	display: flex;
+	align-items: center;
+
+	padding: 15px 0px;
 }
 
-.projects_examples img {
-	display: none;
+.works { /* Set border radius so, when removing flashy colors, only the left and right buttons are curved */
+	width: 80%;
+}
+
+.works ul {
+	width: 100%;
+
+	display: flex;
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+}
+
+.works li {
+	background-color: #E5E5E5;
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	border-radius: 5px;
+}
+
+.works a { /* Add bottom arrow on button hover */
+	font-size: 0.8rem;
+	text-decoration: none;
+	color: black;
+	width: 100%;
+	display: block;
+	padding: 6px 10px;
+}
+
+.all_work {
+	border-radius: 5px 0 0 5px;
+}
+
+.all_work a {
+	background-color: pink;
+	border-radius: 5px 0 0 5px;
+}
+
+.creative a {
+	background-color: green;
+}
+
+.corporate a {
+	background-color: maroon;
+}
+
+.all_work {
+	border-radius: 0 5px 5px 0;
+}
+
+.portfolio a {
+	background-color: yellow;
+	border-radius: 0 5px 5px 0;
+}
+
+.projects_samples {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.projects_samples img {
+	width: 23%;
+	height: 23%;
+	margin: 5px 0px;
 }
 
 /* Contacts (work in progress) */
+
+form a {
+	text-decoration: none;
+	color: black;
+}
 
 #contact {
 	margin-bottom: 20px;
