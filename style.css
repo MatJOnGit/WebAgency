@@ -33,7 +33,10 @@ nav h2 {
 /* Fonts colors. REMINDER : add white font color to "Projects_types li" and to "Projects_example img" 's layer (on hover) */
 
 nav a,
-.AgencyName {
+.AgencyName,
+.UX-design-icon,
+.UI-design-icon,
+.SEO-icon {
 	color: #4DA0BC;
 }
 
@@ -69,6 +72,12 @@ body {
 	padding-top: 10px;
 }
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* Header. REMINDER : add hover effects and links to other sections on buttons */
 
 header {
@@ -86,7 +95,7 @@ header {
 }
 
 nav {
-	width: 90%;
+	width: 95%;
 
 	margin-top: 10px;
 	font-weight: normal;
@@ -96,15 +105,16 @@ nav {
 
 }
 
+/* Make the whole button clickable (not the case atm) */
+
 nav ul {
 	width: 100%;
 
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-
+	justify-content: space-around;
 	margin: 0;
 	padding: 0;
+
 	list-style-type: none;
 }
 
@@ -114,20 +124,17 @@ nav li {
 	border: none;
 	border-radius: 12px 0 12px 0;
 	box-shadow: 2px 2px 6px #4DA0BC;
-
-	padding-bottom: 0px;
-	padding: 6px 0 6px 0;
 }
 
 nav a {
 	width: 80%;
 
-	display: flex;
-	justify-content: center;
-
 	font: bold 12px Verdana;
 	font-size: 0.8rem;
 	text-decoration: none;
+
+	display: block;
+	padding: 6px 10px;
 }
 
 /* Banner (work in progress) */
@@ -161,11 +168,104 @@ nav a {
 
 /* Services (work in progress) */
 
-#services {
-}
-
 #services img {
 	display: none;
+}
+
+.services_details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.UX-design-icon {
+	width: 50px;
+	height: 50px;
+
+	border-radius: 50%;
+	border: solid black 1px;
+
+	align-self: center;
+	margin: 10px 0 0 0;
+}
+
+.UX-design-speech {
+	width: 70%;
+	margin: 10px 0 0 0;
+}
+
+.UX-design-speech p {
+	margin: 10px 0 0 0;
+}
+
+.UI-design-icon {
+	width: 50px;
+	height: 50px;
+
+	border-radius: 50%;
+	border: solid black 1px;
+
+	align-self: center;
+	margin: 10px 0 0 0;
+}
+
+.UI-design-speech {
+	width: 70%;
+	margin: 10px 0 0 0;
+}
+
+.UI-design-speech p {
+	margin: 10px 0 0 0;
+}
+
+.SEO-icon {
+	width: 50px;
+	height: 50px;
+
+	border-radius: 50%;
+	border: solid black 1px;
+
+	align-self: center;
+	margin: 10px 0 0 0;
+}
+
+.SEO-speech {
+	width: 70%;
+	margin: 10px 0;
+}
+
+.SEO-speech p {
+	margin: 0px;
+}
+
+.fas {
+	position: relative;
+    top: 16px;
+    left: 18px;
+}
+
+.white_dot {
+	width: 20px;
+    height: 20px;
+
+    position: relative;
+	top: -3px;
+	left: 37px;
+
+    border-radius: 50%;
+    background-color: white;
+}
+
+.blue_dot {
+	width: 14px;
+    height: 14px;
+
+    position: relative;
+	top: -20px;
+	left: 40px;
+
+    border-radius: 50%;
+    background-color: #4DA0BC;
 }
 
 /* Projects (work in progress) */
