@@ -61,17 +61,10 @@ h2 {
 	font-weight: bold;
 }
 
-
-
 /* Main structure */
 
-body {
-	width: 400px;
-	margin: auto;
-	display: flex; /* Only property removing the blank space on the right side, may change in a close future */
-}
-
 #main_wrapper {
+	width: 400px;
 	margin: auto;
 }
 
@@ -86,6 +79,7 @@ body {
 /* Header. REMINDER : add links to other sections on buttons */
 
 header {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -93,7 +87,7 @@ header {
 
 .logo {
 	width: 80%;
-	margin: 10px;
+	margin-top: 10px;
 }
 
 .logo img {
@@ -102,16 +96,13 @@ header {
 
 nav {
 	width: 95%;
-
-	display: flex;
-	flex-direction: row;
+	height: 30px;
 }
 
 nav ul {
-	width: 100%;
-
 	display: flex;
 	justify-content: space-around;
+
 	margin: 0;
 	padding: 0;
 
@@ -120,17 +111,21 @@ nav ul {
 
 nav li {
 	width: 23%;
-
-	border-radius: 12px 0 12px 0;
+	height: 30px;
 }
 
 nav a {
 	font-size: 0.8rem;
 	text-decoration: none;
-	border-radius: 12px 0 12px 0;
 
-	display: block;
-	padding: 6px 20px;
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 12px 0 12px 0;
 	box-shadow: 2px 2px 6px #4DA0BC;
 }
 
@@ -303,69 +298,84 @@ h3 {
 #projects {
 	background-color: #F5F5F5;
 
-	width
+	width: 100%;
 
 	display: flex;
 	align-items: center;
 
-	padding: 15px 0px;
+	padding: 5px 0px;
 }
 
 .works { /* Set border radius so, when removing flashy colors, only the left and right buttons are curved */
-	width: 80%;
+	width: 90%;
+	height: 30px;
+	position: relative;
 }
 
 .works ul {
-	width: 100%;
+	background-color: #E5E5E5;
 
 	display: flex;
+	flex-direction: row;
+
 	margin: 0;
 	padding: 0;
 
+	border-radius: 5px;
+
+	height: 100%;
+
+	display: flex;
 	list-style-type: none;
+	box-shadow: 0px 3px 0px #E5E5E5;
 }
 
 .works li {
-	background-color: #E5E5E5;
-	width: 25%;
+	width: 100%;
+	height: 100%;
+
 	display: flex;
 	justify-content: center;
-	border-radius: 5px;
-}
+	align-items: center;
 
-.works a { /* Add bottom arrow on button hover */
-	font-size: 0.8rem;
-	text-decoration: none;
 	color: black;
-	width: 100%;
-	display: block;
-	padding: 6px 10px;
 }
 
-.all_work {
+
+.works li:hover {
+	background-color: #4DA0BC;
+	color: white;
+	box-shadow: 0px 3px 0px #468CAD;
+}
+
+.works li:active {
+	background-color: #4DA0BC;
+	color: white;
+	box-shadow: 0px 3px 0px #4DA0BC;
+}
+
+.all_works {
 	border-radius: 5px 0 0 5px;
 }
 
-.all_work a {
-	background-color: pink;
-	border-radius: 5px 0 0 5px;
-}
-
-.creative a {
-	background-color: green;
-}
-
-.corporate a {
-	background-color: maroon;
-}
-
-.all_work {
+.portfolio {
 	border-radius: 0 5px 5px 0;
 }
 
-.portfolio a {
-	background-color: yellow;
-	border-radius: 0 5px 5px 0;
+.works span {
+	position: absolute;
+	top: 33px;
+	left: 42px;
+    border-top: 6px solid #468CAD;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+	/*
+	background-color: red;
+	width: 5px;
+	height: 5px;
+	border-style: solid;
+	border-width: 5px 5px 0 5px;
+	border-color: #468CAD transparent transparent transparent;*/
 }
 
 .projects_samples {
@@ -382,6 +392,10 @@ h3 {
 }
 
 /* Contacts (work in progress) */
+
+form {
+	width: 100%;
+}
 
 form a {
 	text-decoration: none;
