@@ -16,12 +16,13 @@
 	</head>
 	<body>
         <div id="main_wrapper">
-            <header> 
-                <div class="logo">
-                    <img src="images/logo.png" alt="logo WebAgency" />
-                </div>
-                <nav>
-                    <ul>
+
+            <header>
+            	<div class="logo">
+            		<img src="images/logo.png" alt="logo WebAgency" />
+            	</div>
+            	<nav>
+            		<ul>
                         <li><a href="#">Accueil</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Portfolio</a></li>
@@ -29,29 +30,44 @@
                     </ul>
                 </nav>
             </header>
-            
-            <div id="banner"> <!-- Add a slider system -->
-                <h1><span class="AgencyName">WebAgency</span> : L'agence de tous vos projets !</h1>
-                <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
-                <a href="#">Plus d'infos</a>
-            </div>
 
-            <section id="services">
+			<div class="slideshow-container">
+				<div class="slide fade">
+					<img src='images/slider/bg1.jpg'>
+					<div class="slide-textbox">
+						<h1><span class="AgencyName">WebAgency</span> : L'agence de tous vos projets !</h1>
+            			<p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+            			<a href="#">Plus d'infos</a>
+            		</div>
+				</div>
 
-                <h2>Nos services</h2>
-                
-                <div class="splitter">
-                </div>
+				<div class="slide fade">
+					<img src='images/slider/bg2.jpg'>
+					<div class="slide-textbox">
+						<h1><span class="AgencyName">WebAgency</span> : L'agence de tous vos projets !</h1>
+            			<p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+            			<a href="#">Plus d'infos</a></div>
+				</div>
 
-                <p class="subtitle">La WebAgency propose ses services pour des projets de création et de refonte d'interfaces web et mobile</p>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
 
-                <div>
-                	<img src="images/main-feature.png" alt="screen" />
-                </div>
+	        <section id="services">
+	            <h2>Nos services</h2>
 
-                <div class="services_details">
+	            <div class="splitter">
+	            	<div></div>
+	            </div>
 
-                	<div class="UX-design-icon circle">
+	            <p class="section-intro">La WebAgency propose ses services pour des projets de création et de refonte d'interfaces web et mobile</p>
+	            
+	            <div>
+	            	<img src="images/main-feature.png" alt="screen" />
+	            </div>
+
+	            <div class="services_details">
+	               	<div class="UX-design-icon circle">
                 		<i class="fas fa-chart-line fa-2x"></i>
                 		<div class="white_dot"></div>
                 		<div class="blue_dot"></div>
@@ -62,104 +78,102 @@
                 		<p>Nous assurons la meilleure expérience utilisateur pour garantir le succès de votre projet.</p>
                 	</div>
 
-                	<div class="UI-design-icon">
+	               	<div class="UI-design-icon">
                 		<i class="fas fa-cubes fa-2x"></i>
                 		<div class="white_dot"></div>
-                	    <div class="blue_dot"></div>
+                    	<div class="blue_dot"></div>
                 	</div>
 
-                	<div class="UI-design-speech">
+	               	<div class="UI-design-speech">
                 		<h3>UX design</h3>
                 		<p>Nous nous basons sur une approche de "design thinking" afin de donner à vos visiteurs une simplicité de prise en main et de lecture.</p>
                 	</div>
 
-                	<div class="SEO-icon">
+	               	<div class="SEO-icon">
                 		<i class="fas fa-chart-pie fa-2x"></i>
                 		<div class="white_dot"></div>
-                	    <div class="blue_dot"></div>                		
+                    	<div class="blue_dot"></div>                		
                 	</div>
 
-                	<div class="SEO-speech">
+	              	<div class="SEO-speech">
                 		<h3>UX design</h3>
                 		<p>Nous améliorerons le référencement de votre site web avec comme objectif de lui donner plus de visibilité sur la toile.</p>
                 	</div>
-
                 </div>
+        	</section>
 
-            </section>
+	        <section id="projects">
 
-            <section id="projects">
                 <h2>Nos projets</h2>
 
-                <div class="splitter">
+	            <div class="splitter">
                 </div>
 
-                <p class="subtitle">Découvrez un aperçu des plus récents projets qui nous ont été confiés :</p>
+	            <p class="section-intro">Découvrez un aperçu des plus récents projets qui nous ont été confiés :</p>
 
-                <div class="works">
-                    <ul>
-                        <li class="all_works">All Works</li>
-                        <li class="creative">Creative</li>
-                        <li class="corporate">Corporate</li>
-                        <li class="portfolio">Portfolio</li>
+	            <div class="works">
+                   	<ul>
+                       	<li class="all_works">All Works</li>
+                       	<li class="creative">Creative</li>
+                       	<li class="corporate">Corporate</li>
+                       	<li class="portfolio">Portfolio</li>
                     </ul>
                     <span></span>
-                </div>
+	            </div>
 
-                <div class="projects_samples">
-
+		        <div class="projects_samples">
 					<div class="project_1_layer">
 						<div class="project_1_details">
-							<h4>Creative Project #1</h4>
+							<h4>Creative Project</h4>
 							<p>"Funny Face"</p>
 						</div>
 					</div>
 
 					<div class="project_2_layer">
 						<div class="project_2_details">
-							<h4>Creative Project #2</h4>
+							<h4>Creative Project</h4>
 							<p>"Freaky Bunny"</p>
 						</div>
 					</div>
 
 					<div class="project_3_layer">
 						<div class="project_3_details">
-							<h4>Corporate Project #1</h4>
+							<h4>Corporate Project</h4>
 							<p>"Pompadour"</p>
 						</div>
 					</div>
 
 					<div class="project_4_layer">
 						<div class="project_4_details">
-							<h4>Portfolio Project #1</h4>
+							<h4>Portfolio Project</h4>
 							<p>"Note Book"</p>
 						</div>
 					</div>
 
 					<div class="project_5_layer">
 						<div class="project_5_details">
-							<h4>Portfolio Project #2</h4>
+							<h4>Portfolio Project</h4>
 							<p>"Shopping Bags"</p>
 						</div>
 					</div>
 
 					<div class="project_6_layer">
 						<div class="project_6_details">
-							<h4>Creative Project #3</h4>
+							<h4>Creative Project</h4>
 							<p>"Around the World"</p>
 						</div>
 					</div>
 
 					<div class="project_7_layer">
 						<div class="project_7_details">
-							<h4>Corporate Project #2</h4>
+							<h4>Corporate Project</h4>
 							<p>"Rocket Machine"</p>
 						</div>
 					</div>
 
 					<div class="project_8_layer">
 						<div class="project_8_details">
-							<h4>Portfolio Project #3</h4>
+							<h4>Portfolio Project</h4>
 							<p>"Be Theme"</p>
 							<!-- Add thoses elements on relative position once everything is right
 							<i class="fas fa-eye fa-sm"></i>
@@ -168,41 +182,67 @@
 						</div>
 					</div>
 
-                </div>
-
+	            </div>
             </section>
 
-            <section id="contact">
-                <form method="post" action="traitement.php">
-                    <h5>Contact Info</h5>
+			<section id="contact">
+	            <form method="post" action="traitement.php">
+	              	<h5>Contact Info</h5>
 
-                    <p>WebAgency SAS</p>
+	                <p>WebAgency SAS</p>
+		                
+		            <p>25 Rue d'Hauteville 75010 Paris</p>
+	   	                
+	   	            <p><span>Tel :</span> <a href="tel:555-5555">01 02 03 04 05</a></p>
 
-                    <p>25 Rue d'Hauteville 75010 Paris</p>
-                    <p><span>Tel :</span> <a href="tel:555-5555">01 02 03 04 05</a></p>
+		            <p><input type="text" name="name" maxlength="50" placeholder="Name"></p>
 
-                    <p>
-                        <input type="text" name="name" maxlength="50" placeholder="Name">
-                    </p>
+					<p><input type="email" name="email" maxlength="50" placeholder="Email"></p>
+		             
+		            <p><input type="text" name="subject" maxlength="50" placeholder="Subject"></p>
 
-                    <p>
-                        <input type="email" name="email" maxlength="50" placeholder="Email">
-                    </p>
+	                <p><textarea name="Message" cols="50" placeholder="Message"></textarea></p>
 
-                    <p>
-                        <input type="text" name="subject" maxlength="50" placeholder="Subject">
-                    </p>
-
-                    <p>
-                        <textarea name="Message" cols="50" placeholder="Message"></textarea>
-                    </p>
-
-                    <input type="submit" value="Send message" class="form-button" />
-
-                </form>
-            </section>
+	                <input type="submit" value="Send message" class="form-button" />
+	            </form>
+	        </section>
 
         </div>
+
+		<!--                        script slideshow                        -->
+
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				// Next/previous controls
+				function plusSlides(n) {
+				showSlides(slideIndex += n);
+				}
+
+				// Thumbnail image controls
+				function currentSlide(n) {
+				showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("slide");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1} 
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none"; 
+				}
+				for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block"; 
+				dots[slideIndex-1].className += " active";
+				}
+			</script>	
+
+			<!--  	            slideshow's JS script end                     --> 
 
 	</body>
 </html>
