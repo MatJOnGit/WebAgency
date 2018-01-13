@@ -291,13 +291,13 @@
 			to {opacity: 1}
 		}
 
-	/* Services and Projets sections common layout */
+/* Services, Projets and Contact sections common layouts */
 
 	section {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: 20px 0;
+		margin-top: 50px;
 	}
 
 	h2 {
@@ -305,9 +305,44 @@
 		font-size: 1.8rem;
 	}
 
-	.splitter {
-		display: none;
-	}
+	/* Splitter */
+		.splitter {
+			width : 80%;
+			display: flex;
+			justify-content: center;
+		}
+
+		.subtitle_blue_dot {
+			width: 14px;
+			height: 14px;
+
+			margin: 20px 0;
+			display: inline-block;
+			position: relative;
+		
+			border-radius: 50%;
+			background-color: #4DA0BC;
+		}
+
+		.subtitle_blue_dot:before,
+		.subtitle_blue_dot:after {
+			content: "";
+			position: absolute;
+			height: 5px;
+			border-top: 1px grey solid;
+			top: 50%;
+			width: 40px;
+		}
+
+		.subtitle_blue_dot:before {
+			right: 100%;
+			margin-right: 5px;
+		}
+
+		.subtitle_blue_dot:after {
+			left: 100%;
+			margin-left: 5px;
+		}
 
 	.section-intro {
 	width: 90%;
@@ -378,7 +413,7 @@
 		left: 18px;
 	}
 
-	.white_dot {
+	.icons_white_dot {
 		width: 18px;
 		height: 18px;
 
@@ -390,7 +425,7 @@
 		background-color: white;
 	}
 
-	.blue_dot {
+	.icons_blue_dot {
 		width: 14px;
 		height: 14px;
 
@@ -578,7 +613,6 @@
 	#contact {
 		width: 100%;
 		padding: 10px 0;
-		background-color: grey;
 	}
 
 	#contact-background {
