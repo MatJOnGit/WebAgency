@@ -33,7 +33,7 @@
 
 			<div class="slideshow-container">
 				<div class="slide fade">
-					<img src='images/slider/bg1.jpg'>
+					<img src='images/slider/bg1.jpg' alt='WebAgency mascotte fille'>
 					<div class="slide-textbox">
 						<h1><span class="AgencyName">WebAgency</span> : L'agence de tous vos projets !</h1>
             			<p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
@@ -42,15 +42,20 @@
 				</div>
 
 				<div class="slide fade">
-					<img src='images/slider/bg2.jpg'>
+					<img src='images/slider/bg2.jpg' alt='WebAgency mascotte garcon'>
 					<div class="slide-textbox">
 						<h1><span class="AgencyName">WebAgency</span> : L'agence de tous vos projets !</h1>
             			<p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
             			<a href="#">Plus d'infos</a></div>
 				</div>
 
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<div class="prev-button" onclick="plusSlides(-1)">
+					<span>&#10094;</span>
+				</div>
+				<div class="next-button" onclick="plusSlides(1)">
+					<span>&#10095;</span>
+				</div>
+				
 			</div>
 
 	        <section id="services">
@@ -186,25 +191,31 @@
             </section>
 
 			<section id="contact">
-	            <form method="post" action="traitement.php">
-	              	<h5>Contact Info</h5>
+	            <div id="contact-background">
+	            	<div class="contact-info">
+		            	<h5>Contact Info</h5>
 
-	                <p>WebAgency SAS</p>
-		                
-		            <p>25 Rue d'Hauteville 75010 Paris</p>
-	   	                
-	   	            <p><span>Tel :</span> <a href="tel:555-5555">01 02 03 04 05</a></p>
+		               	<h6>WebAgency SAS</h6>
+			                
+			           	<p>25 Rue d'Hauteville 75010 Paris</p>
+		   	                
+		   	           	<p><span>Tel : </span><a href="tel:555-5555">01 02 03 04 05</a></p>
+		   	        </div>
 
-		            <p><input type="text" name="name" maxlength="50" placeholder="Name"></p>
+	            	<form method="post" action="traitement.php">
 
-					<p><input type="email" name="email" maxlength="50" placeholder="Email"></p>
-		             
-		            <p><input type="text" name="subject" maxlength="50" placeholder="Subject"></p>
 
-	                <p><textarea name="Message" cols="50" placeholder="Message"></textarea></p>
+			            <input type="text" name="name" maxlength="40" placeholder="Name">
 
-	                <input type="submit" value="Send message" class="form-button" />
-	            </form>
+						<input type="email" name="email" maxlength="40" placeholder="Email">
+			             
+			            <input type="text" name="subject" maxlength="40" placeholder="Subject">
+
+		                <textarea name="Message" rows="5" cols="30" placeholder="Message"></textarea>
+
+		                <input type="submit" value="Send message" class="form-button" />
+		            </form>
+		        </div>
 	        </section>
 
         </div>
@@ -229,18 +240,18 @@
 				var i;
 				var slides = document.getElementsByClassName("slide");
 				var dots = document.getElementsByClassName("dot");
-				if (n > slides.length) {slideIndex = 1} 
+				if (n > slides.length) {slideIndex = 1}
 				if (n < 1) {slideIndex = slides.length}
 				for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none"; 
+				slides[i].style.display = "none";
 				}
 				for (i = 0; i < dots.length; i++) {
 				dots[i].className = dots[i].className.replace(" active", "");
 				}
-				slides[slideIndex-1].style.display = "block"; 
+				slides[slideIndex-1].style.display = "block";
 				dots[slideIndex-1].className += " active";
 				}
-			</script>	
+			</script>
 
 			<!--  	            slideshow's JS script end                     --> 
 
