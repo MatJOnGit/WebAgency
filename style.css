@@ -48,8 +48,20 @@
 	.form-button,
 	.prev-button span,
 	.next-button span,
-	nav a:hover {
+	nav a:hover,
+	h5 {
 		color: white;
+	}
+
+	h6,
+	.contact-info p,
+	.contact-info a {
+		color: #E5E5E5;
+	}
+
+	nav a:active,
+	.works li {
+		color: black;
 	}
 
 	.slide-textbox a {
@@ -68,8 +80,16 @@
 
 	h6 {
 		font-size: 0.9rem;
-		color: grey;
-		font-weight: normal;
+		font-weight: bold;
+	}
+
+	.contact-info p {
+		font-size: 0.8rem
+	}
+
+	input,
+	textarea {
+		font-size: 0.8rem;
 	}
 
 /* Special text modifications */
@@ -87,6 +107,15 @@
 
 	h4 {
 		font-weight: 900;
+	}
+
+	.contact-info span {
+		text-decoration: underline;
+		text-decoration-style: dotted;
+	}
+
+	.contact-info a {
+		text-decoration: none;
 	}
 
 /* Main structure */
@@ -163,7 +192,6 @@
 	}
 
 	nav a:active {
-		color: black;
 		box-shadow: none;
 	}
 
@@ -211,56 +239,57 @@
 	}
 
 	/* Next & previous buttons */
-	.prev-button,
-	.next-button {
-		cursor: pointer;
-		position: absolute;
-		top: 35%;
-		width: 20px;
-		height: 40px;
-		overflow: hidden;
-		transition: 0.6s ease;
-		background-color: rgba(0,0,0,0.2);
-	}
+		.prev-button,
+		.next-button {
+			cursor: pointer;
+			position: absolute;
+			top: 35%;
+			width: 20px;
+			height: 40px;
+			overflow: hidden;
+			transition: 0.6s ease;
+			background-color: rgba(0,0,0,0.2);
+		}
 
-	.prev-button {
-		left: 0%;
-		border-radius: 0 40px 40px 0;
-	}
+		.prev-button {
+			left: 0%;
+			border-radius: 0 40px 40px 0;
+		}
 
-	.next-button {
-		right: 0%;
-		border-radius: 40px 0 0 40px;
-	}
+		.next-button {
+			right: 0%;
+			border-radius: 40px 0 0 40px;
+		}
 
-	.prev-button span {
-		position: absolute;
-		top: 25%;
-		left: 25%;
-	}
+		.prev-button span {
+			position: absolute;
+			top: 25%;
+			left: 25%;
+		}
 
-	.next-button span {
-		position: absolute;
-		top: 25%;
-		right: 25%;
-	}
+		.next-button span {
+			position: absolute;
+			top: 25%;
+			right: 25%;
+		}
 
-	.fade {
-		-webkit-animation-name: fade;
-		-webkit-animation-duration: 3s;
-		animation-name: fade;
-		animation-duration: 3s;
-	}
+	/* Slide animation */
+		.fade {
+			-webkit-animation-name: fade;
+			-webkit-animation-duration: 3s;
+			animation-name: fade;
+			animation-duration: 3s;
+		}
 
-	@-webkit-keyframes fade {
-		from {opacity: .4}
-		to {opacity: 1}
-	}
+		@-webkit-keyframes fade {
+			from {opacity: .4}
+			to {opacity: 1}
+		}
 
-	@keyframes fade {
-		from {opacity: .4} 
-		to {opacity: 1}
-	}
+		@keyframes fade {
+			from {opacity: .4} 
+			to {opacity: 1}
+		}
 
 	/* Services and Projets sections common layout */
 
@@ -419,8 +448,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
-		color: black;
 	}
 
 
@@ -549,65 +576,57 @@
 /* Contacts (work in progress) */
 
 	#contact {
-		padding: 10px 0;
-		/*background-color: white;*/
-		background-color: red;
 		width: 100%;
+		padding: 10px 0;
+		background-color: grey;
 	}
 
 	#contact-background {
 		width: 70%;
 		background-color: #4DA0BC;
-		border-radius: 5px;
+		border-radius: 8px;
 	}
 
 	.contact-info {
-		margin: 15px 0;
+		margin: 5px;
+	}
+	
+	h5 {
+		margin: 10px 0 0 0;
 	}
 
-	h5,
-	h6,
-	p,
-	input,
-	textarea {
-		margin-top: 5px; 
-		padding: 5px 5px 0 5px;
+	h6 {
+		margin: 10px 0 5px 0;
 	}
 
-	h5,
-	h6,
 	p {
-		margin-left: 10px;
-	}
-
-	.contact-info {
-		background-color: pink;
-	}
-
-	.contact-info span {
-		text-decoration: underline;
-		text-decoration-style: dotted;
-	}
-
-	.contact-info a {
-		text-decoration: none;
-		color: black;
+		margin: 0;
 	}
 
 	form {
-		width: 90%;
-		margin: auto;
-		margin-bottom: 20px;
+		margin: 5px;
 	}
 
 	input,
 	textarea {
+		margin-top: 10px;
 		width: 100%;
+		padding-left: 5px;
+		border: 0.7px grey solid;
+		border-radius: 3px;
 	}
 
 	.form-button {
 		cursor: pointer;
-		margin-top: 15px;
+		margin: 15px 0;
+		background-color: #E5E5E5;
+		color: black;
+	}
+
+	.form-button:hover {
+	}
+
+	.form-button:active {
 	}
 
 /* Media-Queries */
