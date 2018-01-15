@@ -6,7 +6,7 @@
         <meta name="description" content="L'agence de tous vos projets !">
         <meta name="keyworks" content="projet, web, agence">
         <meta name="author" content="WebAgency">
-        <link rel="icon" href="images/ico/faviconB.ico" type="image/x-icon">
+        <link rel="icon" href="images/ico/favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Style sheets -->
         <link rel="stylesheet" href="css/reset.css" />
@@ -131,7 +131,7 @@
 						<div class="project_1_details">
 							<h4>Creative Project</h4>
 							<p>"Funny Face"</p>
-						</div>!
+						</div>
 					</div>
 
 					<div class="project_2_layer">
@@ -219,43 +219,8 @@
 			        </div>
 			    </div>
 	        </section>
-
         </div>
-
-		<!--                        script slideshow                        -->
-
-			<script>
-				var slideIndex = 1;
-				showSlides(slideIndex);
-
-				// Next/previous controls
-				function plusSlides(n) {
-				showSlides(slideIndex += n);
-				}
-
-				// Thumbnail image controls
-				function currentSlide(n) {
-				showSlides(slideIndex = n);
-				}
-
-				function showSlides(n) {
-				var i;
-				var slides = document.getElementsByClassName("slide");
-				var dots = document.getElementsByClassName("dot");
-				if (n > slides.length) {slideIndex = 1}
-				if (n < 1) {slideIndex = slides.length}
-				for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";
-				}
-				for (i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-				}
-				slides[slideIndex-1].style.display = "block";
-				dots[slideIndex-1].className += " active";
-				}
-			</script>
-
-			<!--  	            slideshow's JS script end                     --> 
-
+        <script src='JS/app.js' >
+        </script>
 	</body>
 </html>
