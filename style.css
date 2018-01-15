@@ -138,7 +138,7 @@
 	  box-sizing: border-box;
 	}
 
-/* Header. REMINDER : add links to other sections on buttons */
+/* Header */
 
 	header {
 		width: 100%;
@@ -394,31 +394,18 @@
 			left: 18px;
 		}
 
-		.icons_white_dot,
-		.icons_blue_dot {
+		.icon_blue_dot {
 			position: relative;
 			border-radius: 50%;
-		}
 
-		.icons_white_dot {
-			width: 20px;
-			height: 20px;
+			width: 18px;
+			height: 18px;
 
-			
 			bottom: 9px;
-			left: 57px;
-
-			background-color: white;
-		}
-
-		.icons_blue_dot {
-			width: 16px;
-			height: 16px;
-
-			bottom: 27px;
-			left: 59px;
+			left: 58px;
 
 			background-color: #4DA0BC;
+			border: 2px white solid;
 		}
 
 /* Projects (work in progress) */
@@ -610,6 +597,7 @@
 		/* Eye icon */
 
 			.see_more_button {
+				cursor: pointer;
 				width: 26px;
 				height: 26px;
 
@@ -622,6 +610,15 @@
 
 				color: white;
 				background-color: #4DA0BC;
+				margin: auto;
+			}
+
+			.see_more_button i {
+				color: white;
+				font-size: 0.6rem;
+				position: absolute;
+				top: 7px;
+				left: 6px;
 			}
 
 /* Contacts */
@@ -703,21 +700,23 @@
 
 		/* Fonts colors, sizes and weights */
 
-		h5 {
+			h5 {
 			color: black;
-		}
+			}
 
-		h6,
-		.contact-info p,
-		.contact-info a {
-			color: grey;
-		}
+			h6,
+			.contact-info p,
+			.contact-info a {
+				color: grey;
+			}
 
 		/* Main structure */
 
 			#main_wrapper {
 				width: 768px;
 			}
+
+		/* Header */
 
 			.logo {
 				width: 40%;
@@ -733,6 +732,7 @@
 				width: 70%;
 				height: 40px;
 				margin-top: 10px;
+				border: none;
 			}
 		
 			nav li {
@@ -821,10 +821,74 @@
 
 		@media (min-width: 1024px) {
 
+		/* Fonts size */
+
+			nav a {
+				font-size: 0.6rem;
+				color: grey;
+			}
+
 		/* Main structure */
 
 			#main_wrapper {
 				width: 1024px;
+			}
+
+		/* Header */
+
+			header {
+				flex-direction: row;
+				justify-content: space-between;
+				margin: 0;
+				height: 100px;
+			}
+
+			.logo {
+				margin-left: 112px;
+				width: 17%;
+			}
+
+			nav {
+				width: 20%;
+				height: 100%;
+				margin-right: 145px;
+				margin-top: 0;
+			}
+
+			nav ul {
+				height: 100%;
+				margin:0;
+				padding: 0;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			nav li {
+				height: 100%;
+				margin:0;
+				padding: 0;
+			}
+
+			nav a {
+				height: 100%;
+				border-radius: 0;
+				box-shadow: none;
+				border-top: 4px white solid;
+			}
+
+			nav a:hover {
+				background-color: white;
+				color: grey;
+				border-top: 4px #4DA0BC solid;
+			}
+
+		/* Slide */
+
+			.slideshow-container {
+				width: 100%;
+				margin-top: 0px;
 			}
 
 		/* Projects */
