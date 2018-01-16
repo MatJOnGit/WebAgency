@@ -39,7 +39,8 @@
 		font-size: 1rem;
 	}
 
-	h1 {
+	h1,
+	.AgencyName {
 		font-size: 1.2rem;
 	}
 
@@ -232,50 +233,50 @@
 	}
 
 	.slide-textbox p {
-		margin: 15px 0 0 0;
+		margin-top: 15px;
 		width: 55%;
 		font-size: 0.8rem;
 	}
 
 	.slide-textbox a {
-		margin: 10px 0 0 0;
+		margin-top: 10px;
 		width: 50%;
 		font-size: 0.8rem;
 	}
 
 	/* Next & previous buttons */
+
 		.prev-button,
 		.next-button {
 			cursor: pointer;
 			position: absolute;
-			top: 35%;
+			top: 50px;
 			width: 20px;
 			height: 40px;
-			overflow: hidden;
 			transition: 0.6s ease;
 			background-color: rgba(0,0,0,0.2);
 		}
 
 		.prev-button {
-			left: 0%;
+			left: 0px;
 			border-radius: 0 40px 40px 0;
 		}
 
 		.next-button {
-			right: 0%;
+			right: 0px;
 			border-radius: 40px 0 0 40px;
 		}
 
 		.prev-button span {
 			position: absolute;
-			top: 25%;
-			left: 25%;
+			top: 12px;
+			left: 5px;
 		}
 
 		.next-button span {
 			position: absolute;
-			top: 25%;
-			right: 25%;
+			top: 12px;
+			right: 5px;
 		}
 
 	/* Slide animation */
@@ -670,6 +671,11 @@
 				font-size: 1.1rem;
 			}
 
+			.prev-button span,
+			.next-button span {
+				font-size: 1.3rem;
+			}
+
 		/* Fonts colors, sizes and weights */
 
 			h5 {
@@ -716,6 +722,41 @@
 				border-radius: 18px 0 18px 0;
 			}
 
+		/* Slide */
+
+			.slide-textbox {
+				margin-left: 50px;
+			}
+
+			/* Next & previous buttons */
+
+				h1 {
+					width: 45%;
+				}
+
+				.slide-textbox p {
+					width: 36%;
+				}
+
+				.prev-button,
+				.next-button {
+					top: 102px;
+					width: 30px;
+					height: 60px;
+				}
+
+				.prev-button span {
+					position: absolute;
+					top: 18px;
+					left: 9px;
+				}
+
+				.next-button span {
+					position: absolute;
+					top: 18px;
+					right: 9px;
+				}
+
 		/* Services, Projets and Contact sections common layouts */
 
 			.section-intro {
@@ -724,8 +765,41 @@
 
 		/* Services */
 
+			#services img {
+				margin-top: 15px;
+				display: flex;
+			}
+
 			.services_details {
-				width: 60%;
+				width: 80%;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-around;
+			}
+
+			.UX-design-icon,
+			.UI-design-icon,
+			.SEO-icon {
+				height: 70px;
+			}
+
+			.UX-design-icon,
+			.UX-design-speech,
+			.UI-design-icon,
+			.UI-design-speech,
+			.SEO-icon,
+			.SEO-speech {
+				margin: 30px 20px 5px 20px;
+			}
+
+			.UX-design-speech,
+			.UI-design-speech,
+			.SEO-speech {
+				width: 65%;
+				height: 70px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
 			}
 
 		/* Projects */
@@ -776,7 +850,7 @@
 
 						position: absolute;
 						top: -18px;
-						left: 140px;
+						left: 150px;
 					}
 
 		/* Contact */
@@ -815,6 +889,16 @@
 			nav a {
 				font-size: 0.6rem;
 				color: grey;
+			}
+
+			.prev-button span,
+			.next-button span {
+				font-size: 1.5rem;
+			}
+
+			h1,
+			.AgencyName {
+				font-size : 1.5rem;
 			}
 
 		/* Main structure */
@@ -876,9 +960,64 @@
 		/* Slide */
 
 			.slideshow-container {
-				width: 100%;
 				margin-top: 0px;
 			}
+
+
+			.slide-textbox {
+				margin-left: 100px;
+			}
+
+			h1 {
+				width : 42%;
+			}
+
+			.slide-textbox p {
+				margin-top: 15px; 
+				width: 55%;
+				font-size: 0.8rem;
+			}
+
+			.slide-textbox a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 9%;
+				height: 9%;
+				background-color: blue;
+				margin-top: 15px;
+				font-size: 0.8rem;
+			}
+
+
+			/* Next & previous buttons */
+
+				.prev-button,
+				.next-button {
+					top: 155px;
+					width: 30px;
+					height: 60px;
+				}
+
+				.prev-button {
+					left: 0px;
+				}
+
+				.next-button {
+					right: 0px;
+				}
+
+				.prev-button span {
+					position: absolute;
+					top: 18px;
+					left: 6px;
+				}
+
+				.next-button span {
+					position: absolute;
+					top: 18px;
+					right: 6px;
+				}
 
 		/* Projects */
 
