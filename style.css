@@ -1,34 +1,22 @@
 /* Style sheet */
 
-/* Fonts */
+/* Fonts families */
 
-	@font-face {
-   		font-family: 'fontawesomeregular';
-   	 		src: url('fonts/fontawesome-webfont-webfont.otf') format('otf'),
-			url('fonts/fontawesome-webfont-webfont.eot') format('eot'),
-        	url('fonts/fontawesome-webfont-webfont.svg') format('svg'),
-        	url('fonts/fontawesome-webfont-webfont.ttf') format('ttf'),
-    		url('fonts/fontawesome-webfont-webfont.woff') format('woff');
-    	font-weight: normal;
-    	font-style: normal;
+	a,
+	p,
+	h3 {
+		font-family: 'Open Sans', 'Arial';
 	}
 
-	@font-face {
-		font-family: 'glyphicons-halflings-regular';
-			src: url('fonts/glyphicons-halflings-regular.eot') format('eot'),
- 	        url('fonts/glyphicons-halflings-regular.svg') format('svg'),
- 	        url('fonts/glyphicons-halflings-regular.ttf') format('ttf'),
-        	url('fonts/glyphicons-halflings-regular.woff') format('woff');
-    	font-weight: normal;
-    	font-style: normal;
+	h1,
+	h2,
+	.works,
+	.projects_samples,
+	.contact-info {
+		font-family: 'Roboto';
 	}
 
-
-	* {
-		font-family: 'Arial';
-	}
-
-/* Fonts colors, sizes and weights */
+/* Fonts colors */
 
 	nav a,
 	.AgencyName,
@@ -36,12 +24,6 @@
 	.UI-design-icon,
 	.SEO-icon {
 		color: #4DA0BC;
-		font-size: 1rem;
-	}
-
-	h1,
-	.AgencyName {
-		font-size: 1.2rem;
 	}
 
 	h1,
@@ -51,7 +33,10 @@
 	.prev-button span,
 	.next-button span,
 	nav a:hover,
-	h5 {
+	h5,
+	.projects_samples,
+	.works li:hover,
+	.works li:active {
 		color: white;
 	}
 
@@ -62,22 +47,44 @@
 	}
 
 	nav a:active,
-	.works li {
+	.works {
 		color: black;
 	}
 
-	.slide-textbox a {
-		display: none;
-		text-decoration: none;
+/* Fonts sizes and weights */
+
+	nav a,
+	h1,
+	.AgencyName,
+	input,
+	textarea,
+	.contact-info p {
+		font-size: 0.8rem;
 	}
 
-	.services_details span {
-		font-size: 1.2rem;
-		font-weight: bold;
+	h2 {
+		font-size: 1.3rem;
 	}
 
 	h3 {
-		font-weight: bold;
+		font-size: 1rem;
+	}
+
+	.section-intro,
+	.services_details p,
+	.works li {
+		font-size: 0.9rem;
+	}
+
+	.slide-textbox p,
+	.slide-textbox a,
+	.see_more_button i {
+		font-size: 0.6rem;
+	}
+
+	h4,
+	.projects_samples p {
+		font-size: 0.75rem;
 	}
 
 	h5 {
@@ -86,16 +93,15 @@
 
 	h6 {
 		font-size: 0.9rem;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h6,
+	.works li {
 		font-weight: bold;
-	}
-
-	.contact-info p {
-		font-size: 0.8rem
-	}
-
-	input,
-	textarea {
-		font-size: 0.8rem;
 	}
 
 /* Special text modifications */
@@ -103,16 +109,10 @@
 	h1,
 	h2 {
 		text-transform: uppercase;
-		font-weight: bold;
 	}
 
-	h4,
-	.projects_samples p {
-		font-size: 0.75rem;
-	}
-
-	h4 {
-		font-weight: 900;
+	.section-intro {
+		text-align: center;
 	}
 
 	.contact-info span {
@@ -120,6 +120,8 @@
 		text-decoration-style: dotted;
 	}
 
+	nav a,
+	.slide-textbox a,
 	.contact-info a {
 		text-decoration: none;
 	}
@@ -127,8 +129,7 @@
 /* Main structure */
 
 	#main_wrapper {
-		width: 400px;
-		margin: auto;
+		margin: 0 auto;
 	}
 
 	*,
@@ -179,9 +180,6 @@
 	}
 
 	nav a {
-		font-size: 0.8rem;
-		text-decoration: none;
-
 		width: 100%;
 		height: 100%;
 
@@ -214,7 +212,6 @@
 	}
 
 	.slide-textbox {
-		width: 100%;
 		height: 100%;
 
 		margin-left: 30px;
@@ -227,6 +224,10 @@
 		top: 0px;
 	}
 
+	.slide-textbox a {
+		display: none;
+	}
+
 	h1 {
 		margin: 0;
 		width : 55%;
@@ -235,13 +236,11 @@
 	.slide-textbox p {
 		margin-top: 15px;
 		width: 55%;
-		font-size: 0.8rem;
 	}
 
 	.slide-textbox a {
 		margin-top: 10px;
 		width: 50%;
-		font-size: 0.8rem;
 	}
 
 	/* Next & previous buttons */
@@ -250,9 +249,9 @@
 		.next-button {
 			cursor: pointer;
 			position: absolute;
-			top: 50px;
-			width: 20px;
-			height: 40px;
+			top: 30%;
+			width: 5%;
+			height: 30%;
 			transition: 0.6s ease;
 			background-color: rgba(0,0,0,0.2);
 		}
@@ -308,7 +307,6 @@
 
 	h2 {
 		margin: 0;
-		font-size: 1.8rem;
 	}
 
 	/* Splitter */
@@ -352,9 +350,7 @@
 		}	
 
 	.section-intro {
-	width: 90%;
-	margin: 0;
-	font-size: 0.9rem;
+	width: 90%;	
 	margin: 10px 0;
 	}
 
@@ -409,7 +405,7 @@
 			border: 2px white solid;
 		}
 
-/* Projects (work in progress) */
+/* Projects */
 
 	#projects {
 		background-color: #F5F5F5;
@@ -462,14 +458,12 @@
 
 		.works li:hover {
 			background-color: #4DA0BC;
-			color: white;
 			box-shadow: 0px 3px 0px #468CAD;
 
 		}
 
 		.works li:active {
 			background-color: #4DA0BC;
-			color: white;
 			box-shadow: 0px 3px 0px #4DA0BC;
 		}
 
@@ -503,18 +497,6 @@
 			justify-content: center;
 			align-items: center;
 			margin-top: 15px;
-			padding: 5px 0;
-		}
-
-		.project_1_layer img,
-		.project_2_layer img,
-		.project_3_layer img,
-		.project_4_layer img,
-		.project_5_layer img,
-		.project_6_layer img,
-		.project_7_layer img,
-		.project_8_layer img {
-			width: 100%;
 		}
 
 		.project_1_layer,
@@ -530,6 +512,17 @@
 			position: relative;
 		}
 
+		.project_1_layer img,
+		.project_2_layer img,
+		.project_3_layer img,
+		.project_4_layer img,
+		.project_5_layer img,
+		.project_6_layer img,
+		.project_7_layer img,
+		.project_8_layer img {
+			width: 100%;
+		}
+
 		.project_1_details,
 		.project_2_details,
 		.project_3_details,
@@ -539,10 +532,10 @@
 		.project_7_details,
 		.project_8_details {
 			width: 100%;
-			height: 50%;
+			height: 40%;
 
 			position: absolute;
-			top: 50px;
+			top: 50%;
 			left: 0;
 
 			padding: 0px 5px;
@@ -551,7 +544,6 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			color: white;
 		}
 
 		h4,
@@ -563,6 +555,7 @@
 
 		.projects_samples p {
 			margin-top: 5px;
+			display: none;
 		}
 
 		/* Eye icon */
@@ -579,14 +572,11 @@
 				border-radius: 50%;
 				border: 2px white solid;
 
-				color: white;
 				background-color: #4DA0BC;
 				margin: auto;
 			}
 
 			.see_more_button i {
-				color: white;
-				font-size: 0.6rem;
 				position: absolute;
 				top: 7px;
 				left: 6px;
