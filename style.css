@@ -20,9 +20,7 @@
 
 	nav a,
 	.AgencyName,
-	.UX-design-icon,
-	.UI-design-icon,
-	.SEO-icon {
+	.services-icon {
 		color: #4DA0BC;
 	}
 
@@ -84,7 +82,7 @@
 
 	h4,
 	.projects_samples p {
-		font-size: 0.75rem;
+		font-size: 0.7rem;
 	}
 
 	h5 {
@@ -212,10 +210,9 @@
 	}
 
 	.slide-textbox {
+		width: 55%;
 		height: 100%;
-
 		margin-left: 30px;
-
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -224,23 +221,18 @@
 		top: 0px;
 	}
 
-	.slide-textbox a {
-		display: none;
-	}
-
 	h1 {
 		margin: 0;
-		width : 55%;
 	}
 
 	.slide-textbox p {
 		margin-top: 15px;
-		width: 55%;
 	}
 
 	.slide-textbox a {
+		background-color: #4DA0BC;
 		margin-top: 10px;
-		width: 50%;
+		display: none;
 	}
 
 	/* Next & previous buttons */
@@ -268,14 +260,14 @@
 
 		.prev-button span {
 			position: absolute;
-			top: 12px;
-			left: 5px;
+			top: 27%;
+			left: 18%;
 		}
 
 		.next-button span {
 			position: absolute;
-			top: 12px;
-			right: 5px;
+			top: 27%;
+			right: 18%;
 		}
 
 	/* Slide animation */
@@ -302,7 +294,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-top: 50px;
+		padding: 20px 0;
 	}
 
 	h2 {
@@ -374,9 +366,7 @@
 
 	/* Services icons and icons circles */
 
-		.UX-design-icon,
-		.UI-design-icon,
-		.SEO-icon {
+		.services-icon {
 			width: 70px;
 			height: 70px;
 			margin: 20px 0 5px 0;
@@ -414,8 +404,6 @@
 
 		display: flex;
 		align-items: center;
-
-		padding: 5px 0px;
 	}
 
 	/* Works menu */
@@ -478,7 +466,7 @@
 		.works span {
 			position: absolute;
 			top: 33px;
-			left: 40px;
+			left: 30px;
 		    border-top: 8px solid #468CAD;
 		    border-left: 8px solid transparent;
 		    border-right: 8px solid transparent;
@@ -488,7 +476,7 @@
 			border-top: 8px solid black;
 		}
 
-	/* Projects_samples div */
+	/* Projects_samples block */
 
 		.projects_samples {
 			width: 85%;
@@ -496,46 +484,25 @@
 			flex-wrap: wrap;
 			justify-content: center;
 			align-items: center;
-			margin-top: 15px;
+			margin-top: 25px;
 		}
 
-		.project_1_layer,
-		.project_2_layer,
-		.project_3_layer,
-		.project_4_layer,
-		.project_5_layer,
-		.project_6_layer,
-		.project_7_layer,
-		.project_8_layer {
+		.project_layer {
 			width: 45%;
 			margin: 5px;
 			position: relative;
 		}
 
-		.project_1_layer img,
-		.project_2_layer img,
-		.project_3_layer img,
-		.project_4_layer img,
-		.project_5_layer img,
-		.project_6_layer img,
-		.project_7_layer img,
-		.project_8_layer img {
+		.project_layer img {
 			width: 100%;
 		}
 
-		.project_1_details,
-		.project_2_details,
-		.project_3_details,
-		.project_4_details,
-		.project_5_details,
-		.project_6_details,
-		.project_7_details,
-		.project_8_details {
+		.project_details {
 			width: 100%;
 			height: 40%;
 
 			position: absolute;
-			top: 50%;
+			top: 57%;
 			left: 0;
 
 			padding: 0px 5px;
@@ -550,7 +517,7 @@
 		.projects_samples p {
 			margin: 0;
 			padding: 0;
-
+			width: 80%;
 		}
 
 		.projects_samples p {
@@ -567,7 +534,7 @@
 
 				position: absolute;
 				top: -13px;
-				right: 10px;
+				right: 6px;
 
 				border-radius: 50%;
 				border: 2px white solid;
@@ -651,22 +618,7 @@
 
 		@media (min-width: 768px) {
 
-		/* Font size */
-
-			nav a,
-			.AgencyName,
-			.UX-design-icon,
-			.UI-design-icon,
-			.SEO-icon {
-				font-size: 1.1rem;
-			}
-
-			.prev-button span,
-			.next-button span {
-				font-size: 1.3rem;
-			}
-
-		/* Fonts colors, sizes and weights */
+		/* Fonts colors */
 
 			h5 {
 			color: black;
@@ -676,6 +628,34 @@
 			.contact-info p,
 			.contact-info a {
 				color: grey;
+			}
+
+		/* Fonts sizes and weights */
+
+			nav a,
+			.services-icon {
+				font-size: 1.1rem;
+			}
+
+			h1,
+			.AgencyName {
+				font-size: 1.2rem;
+			}
+
+
+			.slide-textbox p,
+			.slide-textbox a {
+				font-size: 0.9rem;
+			}
+
+			.prev-button span,
+			.next-button span {
+				font-size: 1.3rem;
+			}
+
+			h4,
+			.projects_samples p {
+				font-size: 0.9rem;
 			}
 
 		/* Main structure */
@@ -716,17 +696,26 @@
 
 			.slide-textbox {
 				margin-left: 50px;
+				width: 50%;
+			}
+
+			.slide-textbox p {
+				width: 80%;
+			}
+
+			.slide-textbox a {
+				width: 25%;
+				height: 10%;
+
+				margin-top: 15px;
+				border-radius: 3px;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 
 			/* Next & previous buttons */
-
-				h1 {
-					width: 45%;
-				}
-
-				.slide-textbox p {
-					width: 36%;
-				}
 
 				.prev-button,
 				.next-button {
@@ -767,24 +756,16 @@
 				justify-content: space-around;
 			}
 
-			.UX-design-icon,
-			.UI-design-icon,
-			.SEO-icon {
-				height: 70px;
-			}
-
-			.UX-design-icon,
-			.UX-design-speech,
-			.UI-design-icon,
-			.UI-design-speech,
-			.SEO-icon,
-			.SEO-speech {
+			.services-icon,
+			.services-speech {
 				margin: 30px 20px 5px 20px;
 			}
 
-			.UX-design-speech,
-			.UI-design-speech,
-			.SEO-speech {
+			.services-icon {
+				height: 70px;
+			}
+
+			.services-speech {
 				width: 65%;
 				height: 70px;
 				display: flex;
@@ -799,37 +780,24 @@
 			}
 
 			.works span {
-				left: 52px;
+				left: 42%;
 			}
 
-			.project_1_layer,
-			.project_2_layer,
-			.project_3_layer,
-			.project_4_layer,
-			.project_5_layer,
-			.project_6_layer,
-			.project_7_layer,
-			.project_8_layer {
+			.project_layer {
 				width: 30%;
 			}
 
-			.project_1_details,
-			.project_2_details,
-			.project_3_details,
-			.project_4_details,
-			.project_5_details,
-			.project_6_details,
-			.project_7_details,
-			.project_8_details {
+			.project_details {
 				height: 40%;
-				top: 77px;
+				top: 58%;
 				padding: 0px 10px;
 			}
 
-			/* Projects_samples div */
+			/* Projects_samples block */
 
 				.projects_samples p {
 					margin-top: 7px;
+					display: block;
 				}
 
 				/* Eye icon */
@@ -839,8 +807,8 @@
 						height: 36px;
 
 						position: absolute;
-						top: -18px;
-						left: 150px;
+						top: -32%;
+						left: 75%;
 					}
 
 		/* Contact */
@@ -858,14 +826,10 @@
 
 			/* Eye icon */
 
-				.see_more_button {
-					right: 20px;
-				}
-
 				.see_more_button i {
 					font-size: 0.8rem;
-					top: 9px;
-					left: 9px;
+					top: 30%;
+					left: 25%;
 				}
 
 		} /*End of tablets properties*/
@@ -1011,14 +975,7 @@
 
 		/* Projects */
 
-			.project_1_layer,
-			.project_2_layer,
-			.project_3_layer,
-			.project_4_layer,
-			.project_5_layer,
-			.project_6_layer,
-			.project_7_layer,
-			.project_8_layer {
+			.project_layer {
 				width: 20%;
 			}
 		
