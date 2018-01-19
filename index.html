@@ -32,7 +32,7 @@
                 </nav>
             </header>
 
-			<div class="slideshow-container">
+			<div class="slideshow">
 				<div class="slide fade">
 					<img src='images/slider/bg1.jpg' alt='WebAgency mascotte fille'>
 					<div class="slide-textbox">
@@ -213,36 +213,44 @@
             </section>
 
             <section id="contact">
-	            <div class="contact-background">
-	            	<div class="contact-content">
-		            	<div class="contact-info">
-			            	<h5>Contact Info</h5>
+            	<div class="contact-container">
 
-			               	<h6>WebAgency SAS</h6>
-				                
-				           	<p>25 Rue d'Hauteville 75010 Paris</p>
-			   	                
-			   	           	<p><span>Tel : </span><a href="tel:555-5555">01 02 03 04 05</a></p>
-			   	        </div>
+            		<div id="map">
+            		</div>
 
-		            	<form method="post" action="traitement.php">
+            		<div class="blue_filter">
+            			<div class="contact-background">
 
+			            	<div class="contact-info">
+				            	<h5>Contact Info</h5>
+								<h6>WebAgency SAS</h6>   
+					           	<p>25 Rue d'Hauteville 75010 Paris</p>
+				   	           	<p><span>Tel :</span><a href="tel:555-5555"> 01 02 03 04 05</a></p>
+				   	        </div>
 
-				            <input type="text" name="name" maxlength="40" placeholder="Name">
+							<form method="post" action="traitement.php">
+								<input type="text" name="name" maxlength="40" placeholder="Name">
+								<input type="email" name="email" maxlength="40" placeholder="Email">
+								<input type="text" name="subject" maxlength="40" placeholder="Subject">
+								<textarea name="Message" rows="5" cols="30" placeholder="Message"></textarea>
+								<input type="submit" value="Send message" class="form-button" />
+							</form>
 
-							<input type="email" name="email" maxlength="40" placeholder="Email">
-				             
-				            <input type="text" name="subject" maxlength="40" placeholder="Subject">
+			        	</div>
+            		</div>
 
-			                <textarea name="Message" rows="5" cols="30" placeholder="Message"></textarea>
-
-			                <input type="submit" value="Send message" class="form-button" />
-			            </form>
-			        </div>
 			    </div>
-	        </section>
+			</section>
+
         </div>
+
         <script src='JS/app.js'>
         </script>
+
+        <script src='JS/map.js'>
+        </script>
+
+    	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCanautZ2s7QoJaszr79jgpvY1bZpqmqFA&callback=initMap" async defer >
+    	</script>
 	</body>
 </html>
