@@ -29,7 +29,6 @@
 	h1,
 	.slide-textbox p,
 	.slide-textbox a,
-	.form-button,
 	.prev-button span,
 	.next-button span,
 	nav a:hover,
@@ -47,7 +46,8 @@
 	}
 
 	nav a:active,
-	.works {
+	.works,
+	.form-button {
 		color: black;
 	}
 
@@ -215,6 +215,7 @@
 		width: 55%;
 		height: 100%;
 		margin-left: 30px;
+
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -243,7 +244,7 @@
 		.next-button {
 			cursor: pointer;
 			position: absolute;
-			top: 30%;
+			top: 32%;
 			width: 5%;
 			height: 30%;
 			transition: 0.6s ease;
@@ -327,7 +328,6 @@
 		.underline_blue_dot:after {
 			content: "";
 			position: absolute;
-			height: 5px;
 			border-top: 1px grey solid;
 			top: 50%;
 			width: 40px;
@@ -341,7 +341,7 @@
 		.underline_blue_dot:after {
 			left: 100%;
 			margin-left: 5px;
-		}	
+		}
 
 	.section-intro {
 	width: 90%;	
@@ -555,11 +555,11 @@
 
 	#contact {
 		width: 100%;
-		background-color: grey;
+		background-color: #CECECE;
 	}
 
 	.contact-container {
-		width: 95%;
+		width: 90%;
 		display: flex;
 		justify-content: center;
 	}
@@ -603,7 +603,7 @@
 		margin-top: 10px;
 		width: 100%;
 		padding-left: 5px;
-		border: 0.7px grey solid;
+		border: 0.5px #CECECE solid;
 		border-radius: 3px;
 	}
 
@@ -611,8 +611,7 @@
 		cursor: pointer;
 		margin: 15px 0 10px 0;
 		background-color: #E5E5E5;
-		color: black;
-		box-shadow: 2px 2px 4px black;
+		box-shadow: 1px 2px 4px black;
 	}
 
 	.form-button:active {
@@ -667,6 +666,11 @@
 			h4,
 			.projects_samples p {
 				font-size: 0.9rem;
+			}
+
+			.form-button {
+				font-size: 0.7rem;
+				font-weight: bold;
 			}
 
 		/* Main structure */
@@ -831,12 +835,10 @@
 		/* Contact */
 
 			#contact {
-				width: 100%;
 				background-color: #FBFCFA;
 			}
 
 			.contact-container {
-				width: 90%;
 				position: relative;
 			}
 
@@ -847,9 +849,9 @@
 
 			.blue_filter {
 				width: 100%;
-				height: 400px;
+				height: 100%;
 				position: absolute;
-				background-color: rgba(52, 145, 178, 0.4);
+				background-color: rgba(52, 145, 178, 0.2);
 			}
 
 			.contact-background {
@@ -862,7 +864,7 @@
 			}
 
 			.form-button {
-				width: 60%;
+				width: 50%;
 				height: 25px;
 				background-color: #4DA0BC;
 				box-shadow: 0px 3px 0px #468CAD;
@@ -896,6 +898,12 @@
 				font-size : 1.5rem;
 			}
 
+		/* Fonts sizes and weights */
+
+			.form-button {
+				font-weight: bold;
+			}
+
 		/* Main structure */
 
 			#main_wrapper {
@@ -913,7 +921,7 @@
 
 			.logo {
 				margin-left: 112px;
-				width: 17%;
+				width: 21%;
 			}
 
 			nav {
@@ -954,13 +962,17 @@
 
 		/* Slide */
 
+			.slideshow {
+				margin-top: 0px;
+			}
+
 			.slideshow-container {
 				margin-top: 0px;
 			}
 
 
 			.slide-textbox {
-				margin-left: 100px;
+				margin-left: 105px;
 			}
 
 			h1 {
@@ -979,11 +991,10 @@
 				align-items: center;
 				width: 9%;
 				height: 9%;
-				background-color: blue;
+				background-color: #4DA0BC;
 				margin-top: 15px;
 				font-size: 0.8rem;
 			}
-
 
 			/* Next & previous buttons */
 
@@ -1023,20 +1034,48 @@
 		/* Contact */
 
 			#contact {
-				background-color: white;
+				background-color: #FBFCFA;
+			}
 
+			.contact-container {
+				width: 100%;
 			}
 
 			#map {
 				height: 450px;
 				border-radius: 0px;
-				border: 1px black solid;
 				display: block;
 			}
 
+			.blue_filter {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				background-color: rgba(52, 145, 178, 0.2);
+			}
+
 			.contact-background {
-				background-color: rgba(192,192,192,0.4);
-				width: 20%;
+				background-color: rgba(255, 255, 255, 0.8);
+				width: 25%;
+				height: 85%;
+				top: 8%;
+				left: 64%;
+			}
+
+			textarea {
+				height: 130px;
+			}
+
+			.form-button {
+				width: 38%;
+				height: 27px;
+				background-color: #4DA0BC;
+				box-shadow: 0px 3px 0px #468CAD;
+			}
+
+			.form-button:active {
+				background-color: #4DA0BC;
+				box-shadow: 0px 3px 0px #4DA0BC;
 			}
 
 		} /*End of desktop screen properties*/
