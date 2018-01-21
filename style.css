@@ -350,6 +350,12 @@
 
 /* Services */
 
+	.service_content {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
 	#services img {
 		display: none;
 	}
@@ -357,7 +363,6 @@
 	.services_details {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		width: 90%;
 	}
 
@@ -736,6 +741,7 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				box-shadow: 0px 3px 0px #468CAD;
 			}
 
 			/* Next & previous buttons */
@@ -747,7 +753,7 @@
 					height: 19%;
 				}
 
-		/* Services, Projets and Contact sections common layouts */
+		/* Services, Projects and Contact sections common layouts */
 
 			.section-intro {
 				width: 50%;
@@ -755,12 +761,19 @@
 
 		/* Services */
 
+			.service_content {
+				flex-direction: column;
+				align-items: center;
+				margin-top: 40px;
+			}
+
 			#services img {
-				margin-top: 15px;
-				display: flex;
+				width: 510px;
+				display: block;
 			}
 
 			.services_details {
+				margin-top: 20px;
 				width: 80%;
 				flex-direction: row;
 				flex-wrap: wrap;
@@ -774,11 +787,13 @@
 
 			.services-icon {
 				height: 70px;
+				margin: 0;
 			}
 
 			.services-speech {
-				width: 65%;
+				width: 80%;
 				height: 70px;
+				margin: 15px 0;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -898,8 +913,22 @@
 				font-size: 1.5rem;
 			}
 
+			h2 {
+				font-size: 2rem;
+			}
+
+			.slide-textbox p,
+			.slide-textbox a,
 			.form-button {
 				font-weight: bold;
+			}
+
+			.slide-textbox a {
+				font-size: 0.7rem;
+			}
+
+			.services-icon i {
+				font-size: 1.5rem;
 			}
 
 		/* Main structure */
@@ -914,12 +943,12 @@
 				flex-direction: row;
 				justify-content: space-between;
 				margin: 0;
-				height: 100px;
+				height: 70px;
 			}
 
 			.logo {
-				margin-left: 112px;
-				width: 21%;
+				margin-left: 155px;
+				width: 18%;
 			}
 
 			nav {
@@ -954,7 +983,7 @@
 
 			nav a:hover {
 				background-color: white;
-				color: grey;
+				color: #120D16;
 				border-top: 4px #4DA0BC solid;
 			}
 
@@ -970,28 +999,31 @@
 
 
 			.slide-textbox {
-				margin-left: 105px;
+				margin-left: 140px;
+				width: 65%;
 			}
 
+
 			h1 {
-				width : 42%;
+				width : 60%;
 			}
 
 			.slide-textbox p {
 				margin-top: 15px; 
-				width: 55%;
-				font-size: 0.8rem;
+				width: 60%;
+				font-size: 0.54rem;
 			}
 
 			.slide-textbox a {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				width: 9%;
+				width: 12.5%;
 				height: 9%;
 				background-color: #4DA0BC;
 				margin-top: 15px;
-				font-size: 0.8rem;
+				font-size: 0.7rem;
+				box-shadow: 0px 3px 0px #468CAD;
 			}
 
 			/* Next & previous buttons */
@@ -1002,6 +1034,46 @@
 					width: 3%;
 					height: 18%;
 				}
+
+		/* Services */
+
+			.service_content {
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: flex-start;
+				align-content: flex-start;
+				width: 100%;
+			}
+
+			#services img {
+				margin-left: 133px;
+				width: 32%;
+				display: block;
+			}
+
+			.services_details {
+				margin: 50px 0 0 54px;
+				width: 42%;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-around;
+			}
+
+			.services-icon {
+				width: 60px;
+				height: 60px;
+				margin: 0;
+			}
+
+			.services-speech {
+				width: 78%;
+				height: 70px;
+				margin: 15px 0 15px 30px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
 
 		/* Projects */
 
