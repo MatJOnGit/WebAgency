@@ -77,13 +77,13 @@
 	}
 
 	.slide-textbox p,
-	.slide-textbox a,
-	.see_more_button i {
+	.slide-textbox a {
 		font-size: 0.6rem;
 	}
 
 	h4,
-	.projects_samples p {
+	.projects_samples p,
+	.see_more_button i {
 		font-size: 0.7rem;
 	}
 
@@ -104,7 +104,7 @@
 		font-weight: bold;
 	}
 
-/* Special text modifications */
+/* Special text editing */
 
 	h1,
 	h2 {
@@ -135,9 +135,9 @@
 	*,
 	*:before,
 	*:after {
-	  -moz-box-sizing: border-box;
-	  -webkit-box-sizing: border-box;
-	  box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 
 /* Header */
@@ -221,7 +221,7 @@
 		justify-content: center;
 
 		position: absolute;
-		top: 0px;
+		top: 0%;
 	}
 
 	h1 {
@@ -244,20 +244,20 @@
 		.next-button {
 			cursor: pointer;
 			position: absolute;
-			top: 32%;
-			width: 5%;
+			top: 33%;
+			width: 5.1%;
 			height: 30%;
 			transition: 0.6s ease;
 			background-color: rgba(0,0,0,0.2);
 		}
 
 		.prev-button {
-			left: 0px;
+			left: 0%;
 			border-radius: 0 40px 40px 0;
 		}
 
 		.next-button {
-			right: 0px;
+			right: 0%;
 			border-radius: 40px 0 0 40px;
 		}
 
@@ -328,19 +328,19 @@
 		.underline_blue_dot:after {
 			content: "";
 			position: absolute;
-			border-top: 1px grey solid;
+			border-top: 1px #E5E5E5 solid;
 			top: 50%;
-			width: 40px;
+			width: 300%;
 		}
 
 		.underline_blue_dot:before {
 			right: 100%;
-			margin-right: 5px;
+			margin-right: 60%;
 		}
 
 		.underline_blue_dot:after {
 			left: 100%;
-			margin-left: 5px;
+			margin-left: 60%;
 		}
 
 	.section-intro {
@@ -390,8 +390,8 @@
 			width: 18px;
 			height: 18px;
 
-			bottom: 9px;
-			left: 58px;
+			bottom: 10%;
+			left: 85%;
 
 			background-color: #4DA0BC;
 			border: 2px white solid;
@@ -467,15 +467,19 @@
 
 		.works span {
 			position: absolute;
-			top: 33px;
-			left: 30px;
-		    border-top: 8px solid #468CAD;
-		    border-left: 8px solid transparent;
-		    border-right: 8px solid transparent;
+			top: 107%;
+			left: 37%;
+			border-top: 8px solid #F5F5F5;
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
 		}
 
-		.works span:hover {
-			border-top: 8px solid black;
+		.works li:hover span {
+			border-top: 8px solid #468CAD;
+		}
+
+		.works li:active span {
+			border-top: 8px solid #4DA0BC;
 		}
 
 	/* Projects_samples block */
@@ -505,9 +509,9 @@
 
 			position: absolute;
 			top: 57%;
-			left: 0;
+			left: 0%;
 
-			padding: 0px 5px;
+			padding: 0px 8px;
 
 			background-color: rgba(0,0,0,0.5);
 			display: flex;
@@ -531,12 +535,12 @@
 
 			.see_more_button {
 				cursor: pointer;
-				width: 26px;
-				height: 26px;
+				width: 20%;
+				height: 67%;
 
 				position: absolute;
-				top: -13px;
-				right: 6px;
+				top: -30%;
+				right: 6%;
 
 				border-radius: 50%;
 				border: 2px white solid;
@@ -547,8 +551,8 @@
 
 			.see_more_button i {
 				position: absolute;
-				top: 7px;
-				left: 6px;
+				top: 30%;
+				left: 23%;
 			}
 
 /* Contacts */
@@ -673,6 +677,10 @@
 				font-weight: bold;
 			}
 
+			h2 {
+				font-size: 2.2rem;
+			}
+
 		/* Main structure */
 
 			#main_wrapper {
@@ -734,21 +742,9 @@
 
 				.prev-button,
 				.next-button {
-					top: 102px;
-					width: 30px;
-					height: 60px;
-				}
-
-				.prev-button span {
-					position: absolute;
-					top: 18px;
-					left: 9px;
-				}
-
-				.next-button span {
-					position: absolute;
-					top: 18px;
-					right: 9px;
+					top: 39%;
+					width: 3.2%;
+					height: 19%;
 				}
 
 		/* Services, Projets and Contact sections common layouts */
@@ -811,7 +807,7 @@
 			/* Projects_samples block */
 
 				.projects_samples p {
-					margin-top: 7px;
+					margin-top: 2px;
 					display: block;
 				}
 
@@ -824,6 +820,10 @@
 						position: absolute;
 						top: -32%;
 						left: 75%;
+					}
+
+					.see_more_button:active {
+						border: 2px #4DA0BC solid;
 					}
 
 					.see_more_button i {
@@ -881,7 +881,7 @@
 
 		@media (min-width: 1024px) {
 
-		/* Fonts size */
+		/* Fonts sizes and weights */
 
 			nav a {
 				font-size: 0.6rem;
@@ -895,10 +895,8 @@
 
 			h1,
 			.AgencyName {
-				font-size : 1.5rem;
+				font-size: 1.5rem;
 			}
-
-		/* Fonts sizes and weights */
 
 			.form-button {
 				font-weight: bold;
@@ -1000,29 +998,9 @@
 
 				.prev-button,
 				.next-button {
-					top: 155px;
-					width: 30px;
-					height: 60px;
-				}
-
-				.prev-button {
-					left: 0px;
-				}
-
-				.next-button {
-					right: 0px;
-				}
-
-				.prev-button span {
-					position: absolute;
-					top: 18px;
-					left: 6px;
-				}
-
-				.next-button span {
-					position: absolute;
-					top: 18px;
-					right: 6px;
+					top: 40%;
+					width: 3%;
+					height: 18%;
 				}
 
 		/* Projects */
@@ -1030,7 +1008,24 @@
 			.project_layer {
 				width: 20%;
 			}
-		
+
+			.project_details {
+				display: none;
+			}
+
+			.project_layer:hover .project_details {
+				display: block;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			/* Eye icon */
+
+				.see_more_button:active {
+					border: 2px #4DA0BC solid;
+				}
+
 		/* Contact */
 
 			#contact {
