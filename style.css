@@ -12,7 +12,7 @@
 	h2,
 	.works,
 	.projects_samples,
-	.contact-info,
+	.contact_info,
 	input,
 	textarea {
 		font-family: 'Roboto';
@@ -22,15 +22,15 @@
 
 	nav a,
 	.AgencyName,
-	.services-icon {
+	.services_icon {
 		color: #4DA0BC;
 	}
 
 	h1,
-	.slide-textbox p,
-	.slide-textbox a,
-	.prev-button span,
-	.next-button span,
+	.slide_textbox p,
+	.slide_textbox a,
+	.prev_button span,
+	.next_button span,
 	nav a:hover,
 	h5,
 	.projects_samples,
@@ -40,14 +40,14 @@
 	}
 
 	h6,
-	.contact-info p,
-	.contact-info a {
+	.contact_info p,
+	.contact_info a {
 		color: #E5E5E5;
 	}
 
 	nav a:active,
 	.works,
-	.form-button {
+	.form_button {
 		color: black;
 	}
 
@@ -58,7 +58,7 @@
 	.AgencyName,
 	input,
 	textarea,
-	.contact-info p {
+	.contact_info p {
 		font-size: 0.8rem;
 	}
 
@@ -70,14 +70,14 @@
 		font-size: 1rem;
 	}
 
-	.section-intro,
+	.section_intro,
 	.services_details p,
 	.works li {
 		font-size: 0.9rem;
 	}
 
-	.slide-textbox p,
-	.slide-textbox a {
+	.slide_textbox p,
+	.slide_textbox a {
 		font-size: 0.6rem;
 	}
 
@@ -111,23 +111,23 @@
 		text-transform: uppercase;
 	}
 
-	.section-intro,
+	.section_intro,
 	.services_details p {
 		line-height: 150%;
 	}
 
-	.section-intro {
+	.section_intro {
 		text-align: center;
 	}
 
-	.contact-info span {
+	.contact_info span {
 		text-decoration: underline;
 		text-decoration-style: dotted;
 	}
 
 	nav a,
-	.slide-textbox a,
-	.contact-info a {
+	.slide_textbox a,
+	.contact_info a {
 		text-decoration: none;
 	}
 
@@ -216,7 +216,7 @@
 		width: 100%;
 	}
 
-	.slide-textbox {
+	.slide_textbox {
 		width: 55%;
 		height: 100%;
 		margin-left: 30px;
@@ -233,12 +233,12 @@
 		margin: 0;
 	}
 
-	.slide-textbox p {
+	.slide_textbox p {
 		margin-top: 15px;
 		width: 75%;
 	}
 
-	.slide-textbox a {
+	.slide_textbox a {
 		background-color: #4DA0BC;
 		margin-top: 10px;
 		display: none;
@@ -246,8 +246,8 @@
 
 	/* Next & previous buttons */
 
-		.prev-button,
-		.next-button {
+		.prev_button,
+		.next_button {
 			cursor: pointer;
 			position: absolute;
 			top: 33%;
@@ -257,23 +257,23 @@
 			background-color: rgba(0,0,0,0.2);
 		}
 
-		.prev-button {
+		.prev_button {
 			left: 0%;
 			border-radius: 0 40px 40px 0;
 		}
 
-		.next-button {
+		.next_button {
 			right: 0%;
 			border-radius: 40px 0 0 40px;
 		}
 
-		.prev-button span {
+		.prev_button span {
 			position: absolute;
 			top: 27%;
 			left: 18%;
 		}
 
-		.next-button span {
+		.next_button span {
 			position: absolute;
 			top: 27%;
 			right: 18%;
@@ -349,7 +349,7 @@
 			margin-left: 60%;
 		}
 
-	.section-intro {
+	.section_intro {
 	width: 90%;	
 	margin: 10px 0;
 	}
@@ -383,7 +383,7 @@
 
 	/* Services icons and icons circles */
 
-		.services-icon {
+		.services_icon {
 			width: 70px;
 			height: 70px;
 			margin: 20px 0 5px 0;
@@ -577,7 +577,7 @@
 		background-color: #CECECE;
 	}
 
-	.contact-container {
+	.contact_container {
 		width: 90%;
 		display: flex;
 		justify-content: center;
@@ -594,7 +594,7 @@
 		justify-content: center;
 	}
 
-	.contact-background {
+	.contact_background {
 		width: 60%;
 		padding: 10px 10px;
 		background-color: #4DA0BC;
@@ -604,7 +604,7 @@
 		align-items: center;
 	}
 
-	.contact-info {
+	.contact_info {
 		width: 100%
 	}
 
@@ -631,14 +631,14 @@
 		border-radius: 3px;
 	}
 
-	.form-button {
+	.form_button {
 		cursor: pointer;
 		margin: 15px 0 10px 0;
 		background-color: #E5E5E5;
 		box-shadow: 1px 2px 4px black;
 	}
 
-	.form-button:active {
+	.form_button:active {
 		box-shadow: none;
 	}
 
@@ -650,7 +650,7 @@
 
 		/* Fonts colors */
 
-			.form-button {
+			.form_button {
 				color: white;
 			}
 
@@ -659,15 +659,15 @@
 			}
 
 			h6,
-			.contact-info p,
-			.contact-info a {
+			.contact_info p,
+			.contact_info a {
 				color: #303030;
 			}
 
 		/* Fonts sizes and weights */
 
 			nav a,
-			.services-icon {
+			.services_icon {
 				font-size: 1.1rem;
 			}
 
@@ -676,23 +676,22 @@
 				font-size: 1.2rem;
 			}
 
-
-			.slide-textbox p,
-			.slide-textbox a {
+			.slide_textbox p,
+			.slide_textbox a,
+			h4 {
 				font-size: 0.9rem;
 			}
 
-			.prev-button span,
-			.next-button span {
+			.prev_button span,
+			.next_button span {
 				font-size: 1.3rem;
 			}
 
-			h4,
 			.projects_samples p {
-				font-size: 0.9rem;
+				font-size: 0.8rem;
 			}
 
-			.form-button {
+			.form_button {
 				font-size: 0.7rem;
 				font-weight: bold;
 			}
@@ -713,12 +712,6 @@
 				width: 40%;
 			}
 
-			slide-textbox a {
-				width: 20%;
-				background-color: red;
-				display: block;
-			}
-
 			nav {
 				width: 90%;
 				height: 40px;
@@ -737,16 +730,16 @@
 
 		/* Slide */
 
-			.slide-textbox {
+			.slide_textbox {
 				margin-left: 50px;
 				width: 50%;
 			}
 
-			.slide-textbox p {
+			.slide_textbox p {
 				width: 80%;
 			}
 
-			.slide-textbox a {
+			.slide_textbox a {
 				width: 25%;
 				height: 10%;
 
@@ -761,8 +754,8 @@
 
 			/* Next & previous buttons */
 
-				.prev-button,
-				.next-button {
+				.prev_button,
+				.next_button {
 					top: 39%;
 					width: 3.2%;
 					height: 19%;
@@ -770,7 +763,7 @@
 
 		/* Services, Projects and Contact sections common layouts */
 
-			.section-intro {
+			.section_intro {
 				width: 50%;
 			}
 
@@ -795,17 +788,17 @@
 				justify-content: space-around;
 			}
 
-			.services-icon,
-			.services-speech {
+			.services_icon,
+			.services_speech {
 				margin: 30px 20px 5px 20px;
 			}
 
-			.services-icon {
+			.services_icon {
 				height: 70px;
 				margin: 0;
 			}
 
-			.services-speech {
+			.services_speech {
 				width: 80%;
 				height: 70px;
 				margin: 15px 0;
@@ -868,7 +861,7 @@
 				background-color: #FBFCFA;
 			}
 
-			.contact-container {
+			.contact_container {
 				position: relative;
 			}
 
@@ -884,7 +877,7 @@
 				background-color: rgba(52, 145, 178, 0.2);
 			}
 
-			.contact-background {
+			.contact_background {
 				width: 30%;
 				position: absolute;
 				top: 8%;
@@ -893,7 +886,7 @@
 				border-radius: 0;
 			}
 
-			.form-button {
+			.form_button {
 				width: 50%;
 				height: 25px;
 				background-color: #4DA0BC;
@@ -901,7 +894,7 @@
 				box-shadow: 0px 3px 0px #468CAD;
 			}
 
-			.form-button:active {
+			.form_button:active {
 				background-color: #4DA0BC;
 				box-shadow: 0px 3px 0px #4DA0BC;
 			}
@@ -914,13 +907,25 @@
 
 		/* Fonts sizes and weights */
 
+			.slide_textbox a {
+				font-size: 0.7rem;
+			}
+
+			.services_icon i {
+				font-size: 1.5rem;
+			}
+
+			.project_details p {
+				font-size: 0.75rem;
+			}
+
 			nav a {
 				font-size: 0.6rem;
 				color: grey;
 			}
 
-			.prev-button span,
-			.next-button span {
+			.prev_button span,
+			.next_button span {
 				font-size: 1.5rem;
 			}
 
@@ -933,18 +938,10 @@
 				font-size: 2rem;
 			}
 
-			.slide-textbox p,
-			.slide-textbox a,
-			.form-button {
+			.slide_textbox p,
+			.slide_textbox a,
+			.form_button {
 				font-weight: bold;
-			}
-
-			.slide-textbox a {
-				font-size: 0.7rem;
-			}
-
-			.services-icon i {
-				font-size: 1.5rem;
 			}
 
 		/* Main structure */
@@ -1014,7 +1011,7 @@
 			}
 
 
-			.slide-textbox {
+			.slide_textbox {
 				margin-left: 140px;
 				width: 65%;
 			}
@@ -1024,13 +1021,13 @@
 				width : 60%;
 			}
 
-			.slide-textbox p {
+			.slide_textbox p {
 				margin-top: 15px; 
 				width: 60%;
 				font-size: 0.54rem;
 			}
 
-			.slide-textbox a {
+			.slide_textbox a {
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -1041,14 +1038,14 @@
 				box-shadow: 0px 3px 0px #468CAD;
 			}
 
-			.slide-textbox a:active {
+			.slide_textbox a:active {
 				box-shadow: 0px 3px 0px #4DA0BC;
 			}
 
 			/* Next & previous buttons */
 
-				.prev-button,
-				.next-button {
+				.prev_button,
+				.next_button {
 					top: 40%;
 					width: 3%;
 					height: 18%;
@@ -1062,6 +1059,7 @@
 				justify-content: flex-start;
 				align-items: flex-start;
 				align-content: flex-start;
+				width: 100%;
 			}
 
 			#services img {
@@ -1078,13 +1076,13 @@
 				justify-content: space-around;
 			}
 
-			.services-icon {
+			.services_icon {
 				width: 60px;
 				height: 60px;
 				margin: 0;
 			}
 
-			.services-speech {
+			.services_speech {
 				width: 78%;
 				height: 70px;
 				margin: 15px 0 15px 30px;
@@ -1100,6 +1098,8 @@
 			}
 
 			.project_details {
+				height: 45%;
+				top: 52%;
 				display: none;
 			}
 
@@ -1122,7 +1122,7 @@
 				background-color: #FBFCFA;
 			}
 
-			.contact-container {
+			.contact_container {
 				width: 100%;
 			}
 
@@ -1141,7 +1141,7 @@
 				background-color: rgba(52, 145, 178, 0.2);
 			}
 
-			.contact-background {
+			.contact_background {
 				background-color: rgba(255, 255, 255, 0.8);
 				width: 25%;
 				height: 85%;
@@ -1154,14 +1154,14 @@
 				height: 130px;
 			}
 
-			.form-button {
+			.form_button {
 				width: 38%;
 				height: 27px;
 				background-color: #4DA0BC;
 				box-shadow: 0px 3px 0px #468CAD;
 			}
 
-			.form-button:active {
+			.form_button:active {
 				background-color: #4DA0BC;
 				box-shadow: 0px 3px 0px #4DA0BC;
 			}
