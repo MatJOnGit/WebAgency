@@ -1098,16 +1098,37 @@
 			}
 
 			.project_details {
-				height: 45%;
-				top: 52%;
 				display: none;
 			}
 
 			.project_layer:hover .project_details {
+				height: 45%;
+				top: 52%;
 				display: block;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
+				animation:
+					bg-appearance 0.3s linear, 
+					txt-appearance 0.2s linear;
+			}
+
+			@keyframes bg-appearance { /* keyframes blocks inside media queries not supported on IE10 and IE11 */
+				0% {
+					background-color: rgba(0,0,0,0);
+				}
+				50% {
+					background-color: rgba(0,0,0,0.5);
+				}
+			}
+
+			@keyframes txt-appearance { /* keyframes blocks inside media queries not supported on IE10 and IE11 */
+				0%, 50% {
+					color: transparent;
+				}
+				100% {
+					color: white;
+				}
 			}
 
 			/* Eye icon */
