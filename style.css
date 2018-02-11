@@ -2,19 +2,7 @@
 
 /* Fonts families */
 
-	a,
-	p,
-	h3 {
-		font-family: 'Open Sans', 'Arial';
-	}
-
-	h1,
-	h2,
-	.works,
-	.projects_samples,
-	.contact_info,
-	input,
-	textarea {
+	html {
 		font-family: 'Roboto';
 	}
 
@@ -72,8 +60,9 @@
 
 	.section_intro,
 	.services_details p,
-	.works li {
-		font-size: 0.9rem;
+	.works li,
+	h6 {
+		font-size: 0.8rem;
 	}
 
 	.slide_textbox p,
@@ -88,11 +77,7 @@
 	}
 
 	h5 {
-		font-size: 1.5rem;
-	}
-
-	h6 {
-		font-size: 0.9rem;
+		font-size: 1.3rem;
 	}
 
 	h1,
@@ -319,15 +304,17 @@
 		}
 
 		.underline_blue_dot {
-			width: 14px;
-			height: 14px;
+			width: 22px;
+			height: 22px;
 
-			margin: 20px 0;
+			margin: 10px 0;
 			display: inline-block;
 			position: relative;
 		
 			border-radius: 50%;
 			background-color: #4DA0BC;
+
+			border: 4px white solid;
 		}
 
 		.underline_blue_dot:before,
@@ -336,17 +323,17 @@
 			position: absolute;
 			border-top: 1px #E5E5E5 solid;
 			top: 50%;
-			width: 300%;
+			width: 310%;
 		}
 
 		.underline_blue_dot:before {
 			right: 100%;
-			margin-right: 60%;
+			margin-right: 30%;
 		}
 
 		.underline_blue_dot:after {
 			left: 100%;
-			margin-left: 60%;
+			margin-left: 30%;
 		}
 
 	.section_intro {
@@ -482,7 +469,7 @@
 
 		.works span {
 			position: absolute;
-			top: 107%;
+			top: 109%;
 			left: 37%;
 			border-top: 8px solid #F5F5F5;
 			border-left: 8px solid transparent;
@@ -505,7 +492,7 @@
 			flex-wrap: wrap;
 			justify-content: center;
 			align-items: center;
-			margin-top: 25px;
+			margin-top: 30px;
 		}
 
 		.project_layer {
@@ -610,11 +597,11 @@
 
 	h5,
 	p {
-		margin: 0;
+		margin: 0 0 3px 0;
 	}
 
 	h6 {
-		margin: 10px 0 5px 0;
+		margin: 6px 0 3px 0;
 	}
 
 
@@ -625,15 +612,15 @@
 	input,
 	textarea {
 		margin-top: 10px;
+		padding: 6px 5px ;
 		width: 100%;
-		padding-left: 5px;
 		border: 0.5px #CECECE solid;
 		border-radius: 3px;
 	}
 
 	.form_button {
 		cursor: pointer;
-		margin: 15px 0 10px 0;
+		margin: 6px 0 8px 0;
 		background-color: #E5E5E5;
 		box-shadow: 1px 2px 4px black;
 	}
@@ -866,7 +853,7 @@
 			}
 
 			#map {
-				height: 400px;
+				height: 430px;
 				display: block;
 			}
 
@@ -935,7 +922,7 @@
 			}
 
 			h2 {
-				font-size: 2rem;
+				font-size: 2.5rem;
 			}
 
 			.slide_textbox p,
@@ -1093,8 +1080,21 @@
 
 		/* Projects */
 
+			.works {
+				width: 29%;
+				height: 40px;
+			}
+
+			.projects_samples {
+				width: 95%;
+			}
+
 			.project_layer {
-				width: 20%;
+				margin: 10px;
+			}
+
+			.project_layer {
+				width: 22%;
 			}
 
 			.project_details {
@@ -1109,27 +1109,10 @@
 				flex-direction: column;
 				justify-content: center;
 				animation:
-					bg-appearance 0.3s linear, 
-					txt-appearance 0.2s linear;
+					bg-appearance 0.2s linear,
+					txt-appearance 0.3s linear;
 			}
 
-			@keyframes bg-appearance { /* keyframes blocks inside media queries not supported on IE10 and IE11 */
-				0% {
-					background-color: rgba(0,0,0,0);
-				}
-				50% {
-					background-color: rgba(0,0,0,0.5);
-				}
-			}
-
-			@keyframes txt-appearance { /* keyframes blocks inside media queries not supported on IE10 and IE11 */
-				0%, 50% {
-					color: transparent;
-				}
-				100% {
-					color: white;
-				}
-			}
 
 			/* Eye icon */
 
@@ -1148,7 +1131,7 @@
 			}
 
 			#map {
-				height: 450px;
+				height: 456px;
 				border-radius: 0px;
 				display: block;
 			}
@@ -1165,14 +1148,23 @@
 			.contact_background {
 				background-color: rgba(255, 255, 255, 0.8);
 				width: 25%;
-				height: 85%;
+				height: 380px;
 				position: absolute;
 				top: 8%;
 				left: 64%;
 			}
 
+			input,
 			textarea {
-				height: 130px;
+				padding: 8px 5px;
+			}
+
+			input {
+				height: 25px;
+			}
+
+			textarea {
+				height: 125px;
 			}
 
 			.form_button {
@@ -1185,6 +1177,98 @@
 			.form_button:active {
 				background-color: #4DA0BC;
 				box-shadow: 0px 3px 0px #4DA0BC;
+			}
+
+		/* Animation */
+
+			@-webkit-keyframes bg-appearance {
+				0% {
+					background-color: rgba(0,0,0,0);
+				}
+				50% {
+					background-color: rgba(0,0,0,0.5);
+				}
+			}
+
+			@-moz-keyframes bg-appearance {
+				0% {
+					background-color: rgba(0,0,0,0);
+				}
+				50% {
+					background-color: rgba(0,0,0,0.5);
+				}
+			}
+
+			@-o-keyframes bg-appearance {
+				0% {
+					background-color: rgba(0,0,0,0);
+				}
+				50% {
+					background-color: rgba(0,0,0,0.5);
+				}
+			}
+
+			@-ms-keyframes bg-appearance {
+				0% {
+					background-color: rgba(0,0,0,0);
+				}
+				50% {
+					background-color: rgba(0,0,0,0.5);
+				}
+			}
+
+			@keyframes bg-appearance {
+				0% {
+					background-color: rgba(0,0,0,0);
+				}
+				50% {
+					background-color: rgba(0,0,0,0.5);
+				}
+			}
+
+			@-webkit-keyframes txt-appearance {
+				0%, 50% {
+					color: transparent;
+				}
+				100% {
+					color: white;
+				}
+			}
+
+			@-moz-keyframes txt-appearance {
+				0%, 50% {
+					color: transparent;
+				}
+				100% {
+					color: white;
+				}
+			}
+
+			@-o-keyframes txt-appearance {
+				0%, 50% {
+					color: transparent;
+				}
+				100% {
+					color: white;
+				}
+			}
+
+			@-ms-keyframes txt-appearance {
+				0%, 50% {
+					color: transparent;
+				}
+				100% {
+					color: white;
+				}
+			}
+
+			@keyframes txt-appearance {
+				0%, 50% {
+					color: transparent;
+				}
+				100% {
+					color: white;
+				}
 			}
 
 		} /*End of desktop screen properties*/
