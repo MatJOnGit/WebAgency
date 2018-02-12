@@ -46,11 +46,13 @@
 	.AgencyName,
 	input,
 	textarea,
-	.contact_info p {
+	.contact_info p,
+	h6 {
 		font-size: 0.75rem;
 	}
 
-	h2 {
+	h2,
+	h5 {
 		font-size: 1.3rem;
 	}
 
@@ -73,14 +75,6 @@
 	.projects_samples p,
 	.see_more_button i {
 		font-size: 0.7rem;
-	}
-
-	h5 {
-		font-size: 1.2rem;
-	}
-
-	h6 {
-		font-size: 0.75rem;
 	}
 
 	h1,
@@ -338,7 +332,7 @@
 			position: absolute;
 			border-top: 1px #E5E5E5 solid;
 			top: 50%;
-			width: 310%;
+			width: 420%;
 		}
 
 		.underline_blue_dot:before {
@@ -484,7 +478,7 @@
 
 		.works span {
 			position: absolute;
-			top: 109%;
+			top: 110%;
 			left: 37%;
 			border-top: 8px solid #F5F5F5;
 			border-left: 8px solid transparent;
@@ -832,7 +826,8 @@
 			}
 
 			.works span {
-				left: 42%;
+				left: 43%;
+				top: 109%;
 			}
 
 			.project_layer {
@@ -893,6 +888,8 @@
 				width: 100%;
 				height: 100%;
 				position: absolute;
+				top: 0;
+				left: 0%;
 				background-color: rgba(52, 145, 178, 0.2);
 			}
 
@@ -930,10 +927,6 @@
 				font-size: 0.7rem;
 			}
 
-			.services_icon i {
-				font-size: 1.5rem;
-			}
-
 			.project_details p {
 				font-size: 0.75rem;
 			}
@@ -943,13 +936,11 @@
 				color: grey;
 			}
 
-			.prev_button span,
-			.next_button span {
-				font-size: 1.5rem;
-			}
-
 			h1,
-			.AgencyName {
+			.AgencyName,
+			.prev_button span,
+			.next_button span,
+			.services_icon i {
 				font-size: 1.5rem;
 			}
 
@@ -1129,6 +1120,10 @@
 				height: 40px;
 			}
 
+			.works span {
+				top: 108%;
+			}
+
 			.projects_samples {
 				width: 95%;
 			}
@@ -1178,15 +1173,6 @@
 				height: 456px;
 				border-radius: 0px;
 				display: block;
-			}
-
-			.blue_filter {
-				width: 100%;
-				height: 100%;
-				position: absolute;
-				top: 0%;
-				left: 0%;
-				background-color: rgba(52, 145, 178, 0.2);
 			}
 
 			.contact_background {
